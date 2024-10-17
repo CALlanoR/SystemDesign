@@ -229,7 +229,7 @@ System  desing personal notes
 			- Scalability Databases
 		- Safety
 		- Security
-			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/WebAuthentication.md)
+			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/WebSecurity.md)
 			- Top 10 OWASP
 		- Testability
 		- Usability
