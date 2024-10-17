@@ -186,7 +186,7 @@ System  desing personal notes
 - Virtual Machines and Containers
 	- Virtual Machines
 	- Docker & DockerCompose
-		- Docker fundamentals — images, containers, registries, and compose files.
+		- [Docker fundamentals — images, containers, registries, and compose files.](https://github.com/CALlanoR/SystemDesign/blob/main/VirtualMachinesAndContainers/DockerFundamentals.md)
 		- Understand deployment concepts like desired state, health checks, and updates.
 		- Administration skills for high availability and scalability.
 		- Explore added capabilities like service mesh, ingress, and observability
