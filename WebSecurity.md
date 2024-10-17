@@ -1,4 +1,11 @@
-# Web Authentication
+# Web Security
+
+- JWT
+- Basic Auth
+- Token Auth
+- OAuth
+- OpenID
+- SAML
 
 <p align="center">
   <img src="images/SessionVsJWT.png">
