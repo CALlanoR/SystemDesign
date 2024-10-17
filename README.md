@@ -65,16 +65,16 @@ System  desing personal notes
 		- Regular expressions
 		- Data compression
 	- Contex
-- Software Design Principles (SOLID)
-	- (S) Single responsible principle
-	- (O) Open/Closed principle
-	- (L) Liskov substitution principle
-	- (I) Interface segretation principle
-	- (D) Dependency inversion principle
+- [Software Design Principles (SOLID)](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md)
+	- [(S) Single responsible principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#srp-the-single-responsability-principle)
+	- [(O) Open/Closed principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#ocp-the-open-closed-principle)
+	- [(L) Liskov substitution principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#lsp-the-liskov-substitution-principle)
+	- [(I) Interface segretation principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#isp-the-interface-segregation-principle)
+	- [(D) Dependency inversion principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#dip-the-dependency-inversion-principle)
 	- Others:
-		- DRY (Don’t repeat yourself) Principle
-		- KISS (Keep it simple, stupid!!) Principle
-		- YAGNI (You ain’t gonna need it) Principle
+		- [DRY (Don’t repeat yourself) Principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#dry-kiss-yagni-principles)
+		- [KISS (Keep it simple, stupid!!) Principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#dry-kiss-yagni-principles)
+		- [YAGNI (You ain’t gonna need it) Principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#dry-kiss-yagni-principles)
 - Design patterns
 	- Creational Patterns
 		- Factory Method
