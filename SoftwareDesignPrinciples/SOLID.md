@@ -65,8 +65,8 @@ amount of extra mechanisms.
 </p>
 
 To use the LSP effectively, consider the following guidelines:
-    1. Maintain the Same Behavior: Derived classes should honor the contracts and behaviors defined by the base class.
-    2. Avoid Stronger Preconditions: Derived classes should not have more restrictive requirements (input requirements) than the base class. 
+1. Maintain the Same Behavior: Derived classes should honor the contracts and behaviors defined by the base class.
+2. Avoid Stronger Preconditions: Derived classes should not have more restrictive requirements (input requirements) than the base class. 
 
 Another example:
 
