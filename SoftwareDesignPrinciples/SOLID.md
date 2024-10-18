@@ -4,14 +4,14 @@
 Coupling if two modules’ responsibilities overlap in some way, then a single change may well affect them both. We can measure this overlap by measuring the probability that a modification to one module will propagate to the other. This is called coupling, and high coupling is an enemy of modifiability.
 
 <p align="center">
-  <img src="images/coupling.png">
+  <img src="../images/coupling.png">
   <br/>
 </p>
 
 Cohesion: Cohesion measures how strongly the responsibilities of a module are related. High cohesion is good and means that the class is focused on what it should be doing; low cohesion is bad and means that the class does a great variety of actions.
 
 <p align="center">
-  <img src="images/cohesion.png">
+  <img src="../images/cohesion.png">
   <br/>
 </p>
 
@@ -19,7 +19,7 @@ Cohesion: Cohesion measures how strongly the responsibilities of a module are re
 Of all the SOLID principles, the Single Responsibility Principle (SRP) might be the  least well understood. That’s likely because it has a particularly inappropriate name. It is too easy for programmers to hear the name and then assume that it means that every module should do just one thing.
 
 <p align="center">
-  <img src="images/srp.png">
+  <img src="../images/srp.png">
   <br/>
   <i>"A module should be responsible to one, and only one, actor"</i>
 </p>
@@ -37,7 +37,7 @@ The SRP says to separate the code that different actors depend on.
 Architects separate functionality based on how, why, and when it changes. The goal is to make the system easy to extend without incurring a high impact of change. This goal is accomplished by partitioning the system into components, and arranging those components into a dependency hierarchy that protects higher-level components from changes in lower-level components.
 
 <p align="center">
-  <img src="images/ocp.png">
+  <img src="../images/ocp.png">
   <br/>
 </p>
 
@@ -52,7 +52,7 @@ In 1988, Barbara Liskov wrote the following as a way of defining subtypes.
 it states that objects of a superclass should be seamlessly replaceable with objects of its subclass, without causing any issues or compromising the correctness of the program. This means that a subclass should be able to effortlessly substitute its parent class wherever it is expected.
 
 <p align="center">
-  <img src="images/lsp.png">
+  <img src="../images/lsp.png">
   <br/>
 </p>
 
@@ -60,7 +60,7 @@ A simple violation of substitutability, can cause a system’s architecture to b
 amount of extra mechanisms.
 
 <p align="center">
-  <img src="images/lspCode.png">
+  <img src="../images/lspCode.png">
   <br/>
 </p>
 
@@ -71,12 +71,12 @@ To use the LSP effectively, consider the following guidelines:
 Another example:
 
 <p align="center">
-  <img src="images/lspCode2.png">
+  <img src="../images/lspCode2.png">
   <br/>
 </p>
 
 <p align="center">
-  <img src="images/lspCode3.png">
+  <img src="../images/lspCode3.png">
   <br/>
 </p>
 
@@ -85,12 +85,12 @@ Another example:
 it is harmful to depend on modules that contain more than you need. This is obviously true for source code dependencies that can force unnecessary recompilation and redeployment—but it is also true at a much higher, architectural level.
 
 <p align="center">
-  <img src="images/isp1.png">
+  <img src="../images/isp1.png">
   <br/>
 </p>
 
 <p align="center">
-  <img src="images/isp2.png">
+  <img src="../images/isp2.png">
   <br/>
 </p>
 
@@ -101,7 +101,7 @@ The Dependency Inversion Principle (DIP) tells us that the most flexible systems
 Changes to concrete implementations do not always, or even usually, require changes to the interfaces that they implement. Therefore interfaces are less volatile than implementations.
 
 <p align="center">
-  <img src="images/dip.png">
+  <img src="../images/dip.png">
   <br/>
 </p>
 
