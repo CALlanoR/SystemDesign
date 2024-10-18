@@ -193,7 +193,7 @@ System  desing personal notes
 	- Kubernetes
 		- Discover Kubernetes architecture spanning pods, nodes, and clusters.
 - Cloud Fundamentals (at least one)
-	- AWS
+	- [AWS](https://github.com/CALlanoR/SystemDesign/blob/main/AWS/AWS.md)
 	- GCP
 	- Azure
 - CI/CD (Continuous Integration/Continuous Deployment)
