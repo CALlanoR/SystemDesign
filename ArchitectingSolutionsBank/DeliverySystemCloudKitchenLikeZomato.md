@@ -22,18 +22,11 @@ Requirements:
 	
 	
 ## Delivery System
-- Matching 
-	- Time (ETA), Rating of Delivery Partner
-- Tracking not Routing
-
-Components:
-Person --- Rider Manager (where is the rider?)
-
-Restaurants  ------ Delivery Manager --- Rider Manager
-
-Rider ---- Rider Manager --- Cache (<RiderId>, Location, Rating, NumOfDeliveriesOnThatDay) ---- NotificationService
-
 Rider sending consistently the location to RiderManager by persistent connection
 
-Considerations:
-- Capacity Estimation (1 million deliveries (1 city), 100mil motociclistas)
+<p align="center">
+  <img src="../images/deliverySystem.png">
+  <br/>
+  <i>Source: Gaurav Sen - <a>https://www.youtube.com/watch?v=nHh3DnjnPig</a></i>
+</p>
+
