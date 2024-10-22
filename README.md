@@ -76,13 +76,13 @@ System  desing personal notes
 		- [KISS (Keep it simple, stupid!!) Principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#dry-kiss--yagni-principles)
 		- [YAGNI (You ain’t gonna need it) Principle](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/SOLID.md#dry-kiss--yagni-principles)
 - Design patterns
-	- [Creational Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/DesignPatterns/CreationalPatterns/Summary.md)
-		- [Factory Method](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/DesignPatterns/CreationalPatterns/FactoryMethod.md)
+	- [Creational Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/CreationalPatterns/Summary.md)
+		- [Factory Method](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/CreationalPatterns/FactoryMethod.md)
 		- Abstract Factory
 		- Prototype
 		- Builder
 		- Singleton
-	- [Structural Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/DesignPatterns/StructuralPatterns/Summary.md)
+	- [Structural Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/StructuralPatterns/Summary.md)
 		- Adapter
 		- Bridge
 		- Composite
@@ -90,18 +90,18 @@ System  desing personal notes
 		- Facade
 		- Flyweight
 		- Proxy
-	- [Behavioral Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/DesignPatterns/BehavioralPatterns/Summary.md)
+	- [Behavioral Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/BehavioralPatterns/Summary.md)
 		- Chain of Responsability
 		- Command
 		- Iterator
 		- Mediator
 		- Memento
-		- [Observer](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/DesignPatterns/CreationalPatterns/Observer.md)
+		- [Observer](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/CreationalPatterns/Observer.md)
 		- State
 		- Strategy
 		- Template Method
 		- Visitor
-	- [Concurrency Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareDesignPrinciples/DesignPatterns/ConcurrencyPatterns/Summary.md) 
+	- [Concurrency Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/ConcurrencyPatterns/Summary.md) 
 - Networks fundamentals
     - Core networking fundamentals spanning TCP/IP, DNS, VPNs, IPv4/IPv6.
     - Cloud network components like VPCs, subnets, NACLs, and routing tables.
