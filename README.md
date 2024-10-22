@@ -231,7 +231,7 @@ System  desing personal notes
 		- Safety
 		- Security
 			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/WebSecurity.md)
-			- Top 10 OWASP
+			- [Top 10 OWASP](https://owasp.org/Top10/)
 		- Testability
 		- Usability
 		- Observability
