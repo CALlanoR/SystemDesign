@@ -96,7 +96,7 @@ System  desing personal notes
 		- Iterator
 		- Mediator
 		- Memento
-		- [Observer](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/CreationalPatterns/Observer.md)
+		- [Observer](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/BehavioralPatterns/Observer.md)
 		- State
 		- Strategy
 		- Template Method
