@@ -103,7 +103,7 @@ System  desing personal notes
 		- Visitor
 	- [Concurrency Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/ConcurrencyPatterns/Summary.md) 
 - Networks fundamentals
-    - Core networking fundamentals spanning TCP/IP, DNS, VPNs, IPv4/IPv6.
+    - [Core networking fundamentals](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/NetworksFundamentals/CoreNetworkingFundamentals.md)
     - Cloud network components like VPCs, subnets, NACLs, and routing tables.
     - Discover network security mechanisms like encryption, firewalls, and DDoS protection.
     - Gain insights into load-balancing concepts and implementation.
@@ -141,7 +141,8 @@ System  desing personal notes
 			- Neo4j
 	- Embedded database
 		- Berkeley DB
-		- SQLite	
+		- SQLite
+	- [Data Warehouse](https://github.com/CALlanoR/SystemDesign/blob/main/DataWarehouse/DataWarehouse.md)
 - Git (GitHub, BitBucket, GitLab)
 	- Basic commands
 	- Comparisons
