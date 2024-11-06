@@ -103,7 +103,7 @@ System  desing personal notes
 		- Visitor
 	- [Concurrency Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/ConcurrencyPatterns/Summary.md) 
 - Networks fundamentals
-    - [Core networking fundamentals](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/NetworksFundamentals/CoreNetworkingFundamentals.md)
+    - [Core networking fundamentals](https://github.com/CALlanoR/SystemDesign/blob/main/NetworksFundamentals/CoreNetworkingFundamentals.md)
     - Cloud network components like VPCs, subnets, NACLs, and routing tables.
     - Discover network security mechanisms like encryption, firewalls, and DDoS protection.
     - Gain insights into load-balancing concepts and implementation.
