@@ -31,7 +31,6 @@ Based on the book "The Data Warehouse Toolkit Third Edition, by Ralph Kimball an
         - Choose tthe most robust, actionable data to present in the DW/BI
         - Continously monitor the accuracy of the data and analyses
         - Adapt to changing user profiles, requirements, and business priorities along with the availability of new data sources.
-
     - Sustain the DW/BI environment
         - Using the success of the DW/BI to justify staffing and ongoing expenditures
         - Update the DW/BI system on a regular basis
@@ -65,5 +64,5 @@ dimension attributes and consume mush less space.
 - The DW is only as good as the dimension attributes
 - Dimension tables often represent hierarchical relationships. 
 
-Note:
+**Note**:
 The designer's dilema of whether a numeric quantity is a fact or a dimension attribute is rarely a difficult decision. Continuously valued numeric observations are almost always facts; discrete numeric observations drawn from a small list are almost always dimension attributes.
