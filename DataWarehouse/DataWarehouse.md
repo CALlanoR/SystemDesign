@@ -66,3 +66,4 @@ dimension attributes and consume mush less space.
 
 **Note**:
 The designer's dilema of whether a numeric quantity is a fact or a dimension attribute is rarely a difficult decision. Continuously valued numeric observations are almost always facts; discrete numeric observations drawn from a small list are almost always dimension attributes.
+

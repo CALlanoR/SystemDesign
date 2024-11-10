@@ -227,6 +227,7 @@ System  desing personal notes
 				- Web Sockets
 		- Modifiability
 		- Performance
+			- [Tactics](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Performance/Tactics.md)
 			- Caching
 			- Scalability Databases
 		- Safety
