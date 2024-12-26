@@ -25,7 +25,7 @@ Requirements:
 Rider sending consistently the location to RiderManager by persistent connection
 
 <p align="center">
-  <img src="../images/deliverySystem.png">
+  <img src="../images/deliverySystem.png"  width="300">
   <br/>
   <i>Source: Gaurav Sen - <a>https://www.youtube.com/watch?v=nHh3DnjnPig</a></i>
 </p>

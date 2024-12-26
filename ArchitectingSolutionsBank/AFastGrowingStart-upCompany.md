@@ -23,7 +23,7 @@ from spinning up resources that are not authorized, like large instance types on
 All that while still having billing controls  individually per account. 
 
 <p align="center">
-  <img src="../images/OU1.png" width="400">
+  <img src="../images/OU1.png" width="200">
   <br/>
   <i>Source: Architecting Solutions on AWS - <a>https://www.coursera.org/learn/architecting-solutions-on-aws</a></i>
 </p>

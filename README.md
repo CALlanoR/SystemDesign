@@ -248,6 +248,7 @@ System  desing personal notes
 		- Managing Architecture Debt
 - Cloud Architecture
 	- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/?)
+- [Internet of Things (IoT)](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/IoT.md)
 - [Arquitecting Solutions Bank](https://github.com/CALlanoR/SystemDesign/blob/main/ArchitectingSolutionsBank.md)
 
 
