@@ -1,3 +1,6 @@
 - [Introduction](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/Introduction.md)
 - [IoT Architecture and Core IoT Modules](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/Architecture.md)
+- [Networking Protocols](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/NetworkingProtocols.md)
+- [Rourters and Gateways](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/RoutersAndGateways.md)
 - [Edge Computing](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/EdgeComputing.md)
+- [IoT Edge to Cloud Protocols](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/IoTEdgetoCloudProtocols.md)

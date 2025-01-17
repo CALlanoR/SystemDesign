@@ -22,6 +22,8 @@
 <p align="center">
   <img src="../images/iot/iot_architecture_2.png" width="600">
   <br/>
+  <a href="https://www.youtube.com/watch?v=VzvWWcumBjs">Desarrollando soluciones IoT, Dr. Eugenio Tamura</a>
+  
 </p>
 
 ## IoT Reference Architecture (Components)
