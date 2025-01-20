@@ -4,6 +4,7 @@ understand the constraints in building communication systems for the IoT or any 
 networking. The internet of things will combine personal area networks, local area
 networks, and long-range wide area networks into a web of communication channels.
 
+
 # IoT Requirements for Networking Protocols 
 
 ## Constrained Devices
@@ -75,6 +76,59 @@ The widespread use of IoT across all aspects of life makes security and privacy 
 
 One of the main problems is that current security algorithms demand processing power that IoT devices do not have. 
 
+
+# Common IoT Architectures
+There is no one-size-fits-all solution for IoT architectures. In many cases, the choice between a mesh network, a star topology with a local network, or a direct data connection over the cellular network (or combinations thereof) depends on the particular constraints of an application. Each architecture has advantages and disadvantages.
+
+## Mesh Networks
+Mesh networks are useful for deployments in large but spatially restricted areas
+where devices are placed at relatively high density. Typical applications are meshed
+sensor networks, in which each device combines the ability to take measurements
+and send data, but also to receive and forward incoming radio messages. 
+
+<p align="center">
+  <img src="../images/iot/MeshNetworks.png" width="600">
+  <br/>
+  <i>eBook: The Technical Foundations of IoT, Adryan, Boris; Obermaier, Dominik; Fremantle, Paul, 2017.</i>
+</p>
+
+Mesh network. Sensor nodes (black squares) propagate measurements along various
+routes with their radio range (indicated by dashed circles). On the way to a gateway node (gray square)
+that mediates the connection to the Internet, there are many failing or suboptimal routes for a data
+package. In order to prevent lag times, the optimal route is often remembered and reutilized.
+
+A great advantage of the mesh is that there is no single-point-of-failure.
+
+The biggest disadvantage of mesh networks is the relatively low data throughput. Effective meshing requires frequent hops between radio channels to avoid collisions between neighboring nodes and the utilization of half-duplex time synchronised send-and-receive patterns.
+
+## Local Gateway
+The two most common options are tethering IoT end devices to (a)
+mobile phones via BLE or (b) to local gateways such as WiFi routers or hubs
+supporting other types of radio standards
+
+<p align="center">
+  <img src="../images/iot/LocalGateway.png" width="600">
+  <br/>
+  <i>eBook: The Technical Foundations of IoT, Adryan, Boris; Obermaier, Dominik; Fremantle, Paul, 2017.</i>
+</p>
+
+Most phone-based solutions build on standard BLE chip sets, for which
+mature hardware and stable software stacks exist. The phone then passes data from
+BLE to the Internet via WiFi or available cellular data connection, and vice versa.
+Modern phones also have a degree of compute power, allowing for processing and
+caching before that forwarding takes place.
+
+## Direct Connection
+In contrast to the gateway approach using a mobile phone and BLE, here
+the end device itself holds a communication module and subscriber identity module
+(SIM) or equivalent to connect to the cellular network. 
+
+In areas where there is no cellular network, satellite communication may
+represent a feasible option for data connections. While expensive in operation
+and dependent on special hardware, these modems link to a satellite via a surface
+antenna. The routing of data through satellite connections leads to relatively high
+latency, but especially in case of one-way data communication this can sometimes
+be neglected.
 
 # The most common IoT Wireless communication protocols
 
