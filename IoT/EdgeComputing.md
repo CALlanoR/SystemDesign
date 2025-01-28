@@ -1,8 +1,15 @@
+#  Definition
+Edge computing brings processing and storage systems as close as possible to the application, device, or component that generates and collects data. 
+
 #  How Does Edge Computing Affect the IoT?
 
-Edge Computing allows IoT devices to be more independent, storing, processing, and analyzing data locally instead of just sending it to a centralized server. This can improve the effectiveness of existing IoT devices, and make new devices and deployment topologies possible. 
+Edge Computing allows IoT devices to be more independent, storing, processing, and analyzing data locally instead of just sending it to a centralized server. 
 
-Edge computing involves moving computing, storage, and networking functions at or near to the physical location of users or data sources. By moving computing services closer to these locations, users benefit from faster, more reliable services and better user experience, and organizations have the ability to deploy new types of latency-sensitive applications.
+This can improve the effectiveness of existing IoT devices, and make new devices and deployment topologies possible. 
+
+Edge computing involves moving computing, storage, and networking functions at or near to the physical location of users or data sources. 
+
+By moving computing services closer to these locations, users benefit from faster, more reliable services and better user experience, and organizations have the ability to deploy new types of latency-sensitive applications.
 
 ## Benefits from Edge Computing
 - Reduced latency of communication between IoT devices and the central IT networks.
@@ -106,3 +113,15 @@ Here are three common options for edge computing architecture:
 Machine learning (ML) plays a key role in IoT edge runtimes and IoT applications, and many DevOps teams are incorporating machine learning into their application designs. Machine learning allows organizations to analyze and make predictions based on the data stored and processed by IoT devices.
 
 ML application programming interfaces (APIs) can analyze data from IoT devices to identify data patterns, user behavior, trends, and more. By carrying out this analysis at the edge, an organization can reduce the time required for processing, and can continuously update the analysis based on real time data from IoT devices.
+
+
+# Edge or Fog Computing?
+Some say there are legitimate technical differences between the two, while others say the differences are purely semantic.
+
+For example, it has been posited by Cisco, which coined the term "fog computing" in 2014, that "edge computing" merely refers to the concept of moving computational resources to or closer to data-generating devices, while "fog computing" refers to the literal implementation and management of this architecture at the edge of the cloud, a process known as "fogging."
+
+To make matters even more convoluted, some industry blogs have posited that edge computing refers only to computation that **occurs directly on smart devices**, whereas with fog computing, the computation **occurs within fog nodes or IoT gateways located in a business’s or organization’s local area network (LAN)**.
+
+Here at Trenton Systems, when we use the term edge computing, we mean both. Our definition of edge computing is any data processing that’s done on, in, at, or near the source of data generation.
+
+Scott Shadley, Vice President of Marketing at NGD Systems, a manufacturer of computational storage drives (CSDs), says that there really isn't a difference between edge computing and fog computing.
