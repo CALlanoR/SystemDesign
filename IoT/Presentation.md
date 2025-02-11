@@ -1,0 +1,9 @@
+- Nombre
+- Edad
+- Lenguajes de programacion que ha trabajado
+- Experiencia con Linux
+- Experiencia con maquinas virtuales y contenedores docker
+- Experiencia con alguna nube
+- Experiencia con bases de datos
+	- Modelado
+- Experiencia con IoT

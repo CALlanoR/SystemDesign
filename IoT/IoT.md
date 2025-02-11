@@ -1,9 +1,15 @@
+# Content
+
 - [Introduction](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/Introduction.md)
 - [IoT Architecture and Core IoT Modules](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/Architecture.md)
 - [Networking Protocols](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/NetworkingProtocols.md)
 - [Rourters and Gateways](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/RoutersAndGateways.md)
 - [Edge Computing](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/EdgeComputing.md)
 - [IoT Edge to Cloud Protocols](https://github.com/CALlanoR/SystemDesign/blob/main/IoT/IoTEdgetoCloudProtocols.md)
+- Virtualization and containers
+    - Virtual Machines
+    - Docker
+    - Docker compose
 - Introduction to AWS
     - IAM & AWS CLI
     - EC2 Fundamentals
@@ -18,6 +24,10 @@
     - Connecting things to AWS IoT
     - Sending Notifications and Scheduling Events
     - Visualization using Amazon Quicksight
+- Data Engineering Basics
+    - Data warehousing
+    - Data Lake
+    - Data Mesh
 - AWS This is my architecture
     - [Reinventing Indoor Gardening with Interactive Workflows Using AWS IoT Core and Amazon Pinpoint](https://www.youtube.com/watch?v=bQqJpjv-FXs)
     - [Xylem: Serverless Event-Driven IOT Data Collection](https://www.youtube.com/watch?v=UpVF8jMB4yY)

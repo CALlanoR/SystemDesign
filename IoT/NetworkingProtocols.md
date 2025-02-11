@@ -68,8 +68,7 @@ The  wireless spectrum is a finite resource.
 ## Determinism
 IoT opens up the door for supporting use cases that demand mission critical networking with high requirements for real-time response as well as overall network, protocol, and device robustness.
 
-Real-time information transfer: the time it takes for each packet to traverse a path from its source to its
-destination should be determined; that is, the process must be deterministic.
+Real-time information transfer: the time it takes for each packet to traverse a path from its source to its destination should be determined; that is, the process must be deterministic.
 
 ## Security and Privacy
 The widespread use of IoT across all aspects of life makes security and privacy crucial. Connecting traditionally offline systems to the internet exposes them to increasing and sophisticated attacks, impacting various industries with potentially severe consequences, even loss of life. While IoT threats may seem similar to traditional IT threats, their impact is often more profound, emphasizing the importance of threat analysis and risk assessment in IoT.

@@ -1,4 +1,4 @@
-S# IoT Edge to Cloud Protocols 
+# IoT Edge to Cloud Protocols 
 Why are there any protocols outside of HTTP to transport data across the WAN? 
 
 HTTP has provided significant services and abilities for the internet for over 20
