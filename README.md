@@ -9,12 +9,12 @@ System  desing personal notes
 	- Rust
 	- C/C++
 	- Erlang
-- [Programming paradigms](https://github.com/CALlanoR/SystemDesign/blob/main/ProgramingParadigms/ProgramingParadigms.md)
-	- [Imperative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgramingParadigms/ProgramingParadigms.md#imperative-paradigm)
+- [Programming paradigms](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgramingParadigms.md)
+	- [Imperative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgramingParadigms/ProgrammingParadigms.md#imperative-paradigm)
 		- Procedural (Imperative)
 		- Object Oriented
 		- Parallel processing
-	- [Declarative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgramingParadigms/ProgramingParadigms.md#declarative-programming)
+	- [Declarative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#declarative-programming)
 		- Functional
 		- Logic
 		- Database/Data driven
