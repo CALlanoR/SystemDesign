@@ -10,7 +10,7 @@ System  desing personal notes
 	- C/C++
 	- Erlang
 - [Programming paradigms](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md)
-	- [Imperative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgramingParadigms/ProgrammingParadigms.md#imperative-paradigm)
+	- [Imperative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#imperative-paradigm)
 		- Procedural (Imperative)
 		- Object Oriented
 		- Parallel processing
