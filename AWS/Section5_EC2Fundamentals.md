@@ -37,7 +37,7 @@ Control how traffic is allowed into or out ec2 instances (only contains  allows 
 -  if you see a timeout when trying to establish any kind of connection, this is 100% cause of security group.
 
 <p align="center">
-  <img src="../images/securitygroups.png" width="600">
+  <img src="../images/securitygroups.png" width="400">
   <br/>
 </p>
 

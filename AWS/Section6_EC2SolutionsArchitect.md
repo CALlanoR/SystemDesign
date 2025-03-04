@@ -36,7 +36,7 @@ Cons: if the AZ fails, all instances fails at the same time.
 Use case: Big Data needs to complete fast Applications that needs extremely low latency and high network throughput.
 
 <p align="center">
-  <img src="../images/spread.png" width="500">
+  <img src="../images/spread.png" width="400">
   <br/>
 </p>
 
@@ -47,7 +47,7 @@ Use case: Maximize high availability
 Critical applications where each instance must  be isolated from failure from each other.
 
 <p align="center">
-  <img src="../images/partition.png" width="500">
+  <img src="../images/partition.png" width="400">
   <br/>
 </p>
 
@@ -85,7 +85,7 @@ Note:
 You can create an ENI and associate it to an instance, and if you want to move it to another one in case the instance fails.
 
 <p align="center">
-  <img src="../images/eni.png" width="500">
+  <img src="../images/eni.png" width="300">
   <br/>
 </p>
 
@@ -105,7 +105,7 @@ An instance can Not be Hibernated more than 60  days
 To enable EC2 Hibernate, the EC2 Instance Root Volume type must be an EBS volume and must be encrypted to ensure the protection of sensitive content.
 
 <p align="center">
-  <img src="../images/hibernate.png" width="500">
+  <img src="../images/hibernate.png" width="350">
   <br/>
 </p>
 

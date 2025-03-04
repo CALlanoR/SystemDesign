@@ -10,7 +10,7 @@ An EBS (Elastic Block Store) Volume is a network drive you can attach  to your i
 - To move a  volume  across availability zone, you first need to snapshot it
 
 <p align="center">
-  <img src="../images/ec2instacestorage.png" width="500">
+  <img src="../images/ec2instacestorage.png" width="350">
   <br/>
 </p>
 

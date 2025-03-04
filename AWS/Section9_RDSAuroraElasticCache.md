@@ -17,7 +17,7 @@ To keep in mind:
 - Useful for applications with unpredictable workloads
 
 <p align="center">
-  <img src="../images/rdsreplicas.png" width="600">
+  <img src="../images/rdsreplicas.png" width="400">
   <br/>
 </p>
 
@@ -38,7 +38,7 @@ To keep in mind:
 ### RDS Multi AZ (Disaster Recovery)
 The  read replicas be setup as Multi AZ for Disaster Recovery (DR)
 <p align="center">
-  <img src="../images/rdsmultiaz.png" width="600">
+  <img src="../images/rdsmultiaz.png" width="350">
   <br/>
 </p>
 
@@ -55,7 +55,7 @@ Access  to the underlying database and OS so you can:
 - SSH access
 
 <p align="center">
-  <img src="../images/rdsssh.png" width="600">
+  <img src="../images/rdsssh.png" width="300">
   <br/>
 </p>
 
@@ -76,7 +76,7 @@ Access  to the underlying database and OS so you can:
 - Support for Cross Region Replication
 
 <p align="center">
-  <img src="../images/aurorahighavailability.png" width="600">
+  <img src="../images/aurorahighavailability.png" width="400">
   <br/>
 </p>
 
@@ -118,7 +118,7 @@ Access  to the underlying database and OS so you can:
 	Typical cross-region replication takes less than 1 second
 
 <p align="center">
-  <img src="../images/auroracrossreplicas.png" width="600">
+  <img src="../images/auroracrossreplicas.png" width="300">
   <br/>
 </p>
 
@@ -181,7 +181,7 @@ Allows apps to pool and share DB Connections established with the database
 RDS Proxy is never publicly accesible (must be accessed from VPC).
 
 <p align="center">
-  <img src="../images/rdsproxy.png" width="600">
+  <img src="../images/rdsproxy.png" width="300">
   <br/>
 </p>
 
