@@ -27,7 +27,7 @@ When you create a placement group, you specify one  the following strategies for
     • **Partition:** Spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka.
 
 <p align="center">
-  <img src="../images/placementgroup.png" width="500">
+  <img src="../images/placementgroups.png" width="500">
   <br/>
 </p>
 
