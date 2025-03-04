@@ -109,3 +109,4 @@ To enable EC2 Hibernate, the EC2 Instance Root Volume type must be an EBS volume
   <img src="../images/hibernate.png" width="500">
   <br/>
 </p>
+
