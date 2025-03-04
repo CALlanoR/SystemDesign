@@ -19,7 +19,7 @@ An EBS (Elastic Block Store) Volume is a network drive you can attach  to your i
   <br/>
 </p>
 
-**EBS Snapshots**
+### EBS Snapshots
 Make a backup (snapshot) of your EBS volume, not necessary to  detach volume but recommended.
 Can copy snapshots across AZ or Region.
 
@@ -29,6 +29,6 @@ Can copy snapshots across AZ or Region.
 </p>
 
 Features:
-    • EBS Snapshot Archive (75% cheaper, takes within 24 to 72 hours for restoring the archive)
-    • You can recover them after an accidental deletion with Recycle Bin senting  retention rules.
-    • Fast snapshot restore (FSR) ($$$)
+- EBS Snapshot Archive (75% cheaper, takes within 24 to 72 hours for restoring the archive)
+- You can recover them after an accidental deletion with Recycle Bin senting  retention rules.
+- Fast snapshot restore (FSR) ($$$)
