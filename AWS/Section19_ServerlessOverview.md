@@ -126,7 +126,15 @@ written in JavaScript, used to change Viewer requests and  responses.
 - Viewer Request: After CloudFront receives a requests from a viewer.
 - Viewer Response: Before CloudFront forwards the response to the viewer.
 
+<p align="center">
+  <img src="../images/lambda6.png" width="400">
+  <br/>
+</p>
 
+<p align="center">
+  <img src="../images/lambda6.png" width="400">
+  <br/>
+</p>
 
 
 
