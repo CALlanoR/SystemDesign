@@ -84,7 +84,7 @@ System  desing personal notes
 		- Builder
 		- Singleton
 	- [Structural Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/StructuralPatterns/Summary.md)
-		- Adapter
+		- [Adapter](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/StructuralPatterns/Adapter.md)
 		- Bridge
 		- Composite
 		- Decorator
