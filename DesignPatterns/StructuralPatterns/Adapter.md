@@ -32,7 +32,7 @@ if __name__ == "__main__":
     client_code(adapter)
 ```
 
-[View more examples (from https://github.com/ArjanCodes)](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/CreationalPatterns/Examples/Adapter)
+[View more examples (from https://github.com/ArjanCodes)](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/StructuralPatterns/Examples/Adapter)
 
 ## Pros and Cons of Adapter Design Pattern
 
