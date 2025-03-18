@@ -102,7 +102,7 @@ When you publish a new version:
 - Snapshot is cached for low-latency access
 
 <p align="center">
-  <img src="../images/lambda6.png" width="400">
+  <img src="../images/lambda6.png" width="350">
   <br/>
 </p>
 
@@ -134,7 +134,7 @@ written in JavaScript, used to change Viewer requests and responses.
 - Viewer Response: Before CloudFront forwards the response to the viewer.
 
 <p align="center">
-  <img src="../images/lambda7.png" width="400">
+  <img src="../images/lambda7.png" width="250">
   <br/>
 </p>
 
@@ -153,12 +153,12 @@ Used too, to change  CloudFront responses:
 </p>
 
 <p align="center">
-  <img src="../images/lambda9.png" width="400">
+  <img src="../images/lambda9.png" width="600">
   <br/>
 </p>
 
 <p align="center">
-  <img src="../images/lambda10.png" width="400">
+  <img src="../images/lambda10.png" width="600">
   <br/>
 </p>
 
@@ -171,7 +171,7 @@ By default, your lambda functions is launched  outside your own VPC
 </p>
 
 <p align="center">
-  <img src="../images/lambda12.png" width="400">
+  <img src="../images/lambda12.png" width="600">
   <br/>
 </p>
 
@@ -191,7 +191,7 @@ https://kreuzwerker.de/en/post/should-you-use-lambda-containers
 - DB Instance must have the required permissions to invoke the lambda function.
 
 <p align="center">
-  <img src="../images/lambda13.png" width="400">
+  <img src="../images/lambda13.png" width="300">
   <br/>
 </p>
 
