@@ -1,0 +1,9 @@
+mkdir package
+pip3 install -r requirements.txt -t ./package
+cd package
+zip -r ../lambda_function.zip .
+cd ..
+ls -la
+zip lambda_function.zip lambda_function.py
+unzip -l lambda_function.zip
+aws lambda update-function-code --function-name lambda6 --zip-file fileb://lambda_function.zip --profile awsacademy

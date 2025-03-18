@@ -30,7 +30,7 @@ https://github.com/firecracker-microvm/firecracker/
 </p>
 
 <p align="center">
-  <img src="../images/lambda2.png" width="400">
+  <img src="../images/lambda2.png" width="600">
   <br/>
 </p>
 
@@ -54,12 +54,12 @@ In this section, we will refer to the concept of Warm and Cold Starts. After the
 When the service request to invoke a Lambda and a new sandbox environment is spawned
 
 <p align="center">
-  <img src="../images/lambda3.png" width="400">
+  <img src="../images/lambda3.png" width="600">
   <br/>
 </p>
 
 <p align="center">
-  <img src="../images/lambda4.png" width="400">
+  <img src="../images/lambda4.png" width="600">
   <br/>
 </p>
 
@@ -106,10 +106,17 @@ When you publish a new version:
   <br/>
 </p>
 
-## CloudFront Functions & Lambda@Edge
+## Customization at the Edge
+- Many modern applications execute some form of the logic at the edge
+- Edge function: 
+  - A code that you write and attach to CloudFront distributions
+  - Runs close to your users to minimize latency
+
+
+### CloudFront provides two types: CloudFront Functions & Lambda@Edge
 - To customize the CDN content
-- To execute some form of logic at the edge.
-- Runs  close to your users to minimize latency.
+- Pay only for what you use
+- Fully serverless
 
 ### Uses cases:
 - Website securitty
@@ -122,22 +129,184 @@ When you publish a new version:
 - User tracking and analytics
 
 ### CloudFront Functions: Lightweight functions 
-written in JavaScript, used to change Viewer requests and  responses.
+written in JavaScript, used to change Viewer requests and responses.
 - Viewer Request: After CloudFront receives a requests from a viewer.
 - Viewer Response: Before CloudFront forwards the response to the viewer.
 
 <p align="center">
-  <img src="../images/lambda6.png" width="400">
+  <img src="../images/lambda7.png" width="400">
+  <br/>
+</p>
+
+### Lambda@Edge: NodeJS or Python
+Lambda@Edge is a feature of CloudFront that lets you run code closer to your users, which improves performance and reduces latency.
+Used too, to change  CloudFront responses:
+- Viewer Request: After CloudFront receives a requests from a viewer.
+- Origin Request: Before CloudFront forwards the response to the origin.
+- Origin Response : After CloudFront receives a requests from a origin.
+- Viewer Response: Before CloudFront forwards the response to the viewer.
+
+
+<p align="center">
+  <img src="../images/lambda8.png" width="400">
   <br/>
 </p>
 
 <p align="center">
-  <img src="../images/lambda6.png" width="400">
+  <img src="../images/lambda9.png" width="400">
+  <br/>
+</p>
+
+<p align="center">
+  <img src="../images/lambda10.png" width="400">
+  <br/>
+</p>
+
+### Lambda by default
+By default, your lambda functions is launched  outside your own VPC
+
+<p align="center">
+  <img src="../images/lambda11.png" width="400">
+  <br/>
+</p>
+
+<p align="center">
+  <img src="../images/lambda12.png" width="400">
+  <br/>
+</p>
+
+### Lambda performance best practices
+https://medium.com/platform-engineer/aws-lambda-performance-best-practices-50968e5bb075
+
+### Lambda zip vs containers
+https://medium.com/@ryan.cormack/comparing-container-and-zip-lambdaliths-with-thin-functions-03b439239e72
+
+### When use lambda with containers
+https://kreuzwerker.de/en/post/should-you-use-lambda-containers
+
+
+### Invoking lambda from RDS & Aurora
+- Supported for RDS for PostgreSQL and Aurora MySQL
+- Must allow outbound traffic to your lambda function.
+- DB Instance must have the required permissions to invoke the lambda function.
+
+<p align="center">
+  <img src="../images/lambda13.png" width="400">
+  <br/>
+</p>
+
+## Function handler
+The Lambda function handler is the method in your function code that processes events. When your function is invoked, Lambda runs the handler method. Your function runs until the handler returns a response, exits, or times out.
+
+### Returning a value
+Optionally, a handler can return a value, which must be JSON serializable. Common return types include dict, list, str, int, float, and bool.
+
+## Lambda Context
+When Lambda runs your function, it passes a context object to the handler. This object provides methods and properties that provide information about the invocation, function, and execution environment.
+
+## Log and monitor Python Lambda functions
+AWS Lambda automatically monitors Lambda functions and sends log entries to Amazon CloudWatch. Your Lambda function comes with a CloudWatch Logs log group and a log stream for each instance of your function. The Lambda runtime environment sends details about each invocation and other output from your function's code to the log stream.
+
+## Using the AWS SDK for Python (Boto3) in your handler
+Often, you'll use Lambda functions to interact with other AWS services and resources. The simplest way to interface with these resources is to use the AWS SDK for Python (Boto3). All supported Lambda Python runtimes include a version of the SDK for Python. However, we strongly recommend that you include the SDK in your function's deployment package if your code needs to use it. Including the SDK in your deployment package gives you full control over your dependencies and reduces the risk of version misalignment issues with other libraries.
+
+## Code best practices for python lambda functions
+- Separate the Lambda handler from your core logic. This allows you to make a more unit-testable function. For example, in Python, this may look like: 
+
+<p align="center">
+  <img src="../images/lambda14.png" width="400">
+  <br/>
+</p>
+
+- **Control the dependencies in your function's deployment package.** The AWS Lambda execution environment contains a number of libraries. For the Node.js and Python runtimes, these include the AWS SDKs. To enable the latest set of features and security updates, Lambda will periodically update these libraries. These updates may introduce subtle changes to the behavior of your Lambda function. To have full control of the dependencies your function uses, package all of your dependencies with your deployment package.
+
+- **Minimize the complexity of your dependencies.** Prefer simpler frameworks that load quickly on execution environment startup.
+
+- **Minimize your deployment package size to its runtime necessities.** This will reduce the amount of time that it takes for your deployment package to be downloaded and unpacked ahead of invocation.
+
+- **Take advantage of execution environment reuse to improve the performance of your function.** Initialize SDK clients and database connections outside of the function handler, and cache static assets locally in the /tmp directory. Subsequent invocations processed by the same instance of your function can reuse these resources. This saves cost by reducing function run time.
+
+- **Use environment variables to pass operational parameters to your function.** For example, if you are writing to an Amazon S3 bucket, instead of hard-coding the bucket name you are writing to, configure the bucket name as an environment variable.
+
+- **Avoid using recursive invocations in your Lambda function,** where the function invokes itself or initiates a process that may invoke the function again. This could lead to unintended volume of function invocations and escalated costs.
+
+- **Do not use non-documented, non-public APIs in your Lambda function code.** For AWS Lambda managed runtimes, Lambda periodically applies security and functional updates to Lambda's internal APIs.
+
+- **Write idempotent code.** Writing idempotent code for your functions ensures that duplicate events are handled the same way. Your code should properly validate events and gracefully handle duplicate events. 
+
+## Amazon DynamoDB
+- Fully managed, highly available with replications across multiples Azs
+- NoSQL database
+- Scales to massive workloads (distributed database)
+- Millions of requests per second
+- Integrated with IAM
+- No maintenance or patching, always available
+- Table class:
+	- Standard
+  - Infrequent access
+
+<p align="center">
+  <img src="../images/dynamo2.png" width="400">
+  <br/>
+</p>
+
+### Read/Writte Capacity modes 
+Provisioned mode (default) (Load predictable)
+- You specify the number of reads/writes per second
+- You need to plan capacity beforehand
+- Pay for provisioned **Read Capacity Units (RCU) & Write Capacity Units (WCU)**
+- Possibility to add auto-scaling mode for RCU & WCU
+- RCU and WCU are decoupled, so you can increase/decrease each value separately
+
+### On-Demand Mode
+- Read/writes  automatically scale up/down with your workloads
+- No capacity planning needed
+- Pay for what you use, more expensive
+- Great for unpredictable workloads or sudden spikes
+
+### DynamoDB Accelerator (DAX)
+- Fully-managed, highly available, seamless in-memory cache for DynamoDB
+- Help solve read congestion by caching
+- Microseconds latency for cached data
+- 5min TTL (Time To Live) for cache (default)
+- It caches the most frequently used data, thus offloading the heavy reads on hot keys off your DynamoDB table, hence preventing the "ProvisionedThroughputExceededException" exception. 
+
+<p align="center">
+  <img src="../images/dynamo4.png" width="400">
+  <br/>
+</p>
+
+### DynamoDB – Stream processing
+- Ordered streams of item-level modifications (create/update/delete) in a dynamodb table. It’s integrated  with aws lambda, so that you crate triggers that  automatically respond to events  in real-time.
+- 24  hours retention
+- Limited # of  consumers
+- Process  using AWS Lambda Triggers or DynamoDB Stream Kinesis Adapter
+
+<p align="center">
+  <img src="../images/dynamo1.png" width="400">
+  <br/>
+</p>
+
+### DynamoDB Global tables
+- Active-Active replications
+- Apps can read and write to the table in any regional
+- Must be enable DynamoDB Streams
+
+<p align="center">
+  <img src="../images/dynamo3.png" width="400">
   <br/>
 </p>
 
 
+### DynamoDB – Backups for disaster recovery
+- Continous backups using point-in-time recovery
+- On-demands backups
+	- Full backups for long-term retention
+- Can be configured and managed in AWS Backup
 
-
-
+### DynamoDB – Integration with S3
+<p align="center">
+  <img src="../images/dynamo5.png" width="400">
+  <br/>
+</p>
 
