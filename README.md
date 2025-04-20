@@ -202,6 +202,7 @@ System  desing personal notes
 - CI/CD (Continuous Integration/Continuous Deployment)
 - Testing
     - [Unit Tests](https://github.com/CALlanoR/SystemDesign/blob/main/UnitTests.md)
+	- BDD
 	- Definition and difference with integration testing and functional testing
 - Infrastructure as code 
     - Terraform
@@ -233,7 +234,7 @@ System  desing personal notes
 			- Scalability Databases
 		- Safety
 		- Security
-			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/WebSecurity.md)
+			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Security/WebSecurity.md)
 			- [Top 10 OWASP](https://owasp.org/Top10/)
 		- Testability
 		- Usability

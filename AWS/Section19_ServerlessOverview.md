@@ -310,3 +310,58 @@ Provisioned mode (default) (Load predictable)
   <br/>
 </p>
 
+## API Gateway
+Amazon API Gateway is a fully managed service that makes it easy for developers to publish, maintain, monitor, secure, and operate APIs at any scale. It's a pay-as-you-go service that takes care of all of the undifferentiated heavy lifting involved in securely and reliably running APIs at scale.
+
+Read [here](https://microservices.io/patterns/apigateway.html) the API Gateway pattern definition. 
+
+### AWS API Gateway functionalities:
+- AWS Lambda + API Gateway: No infrastructure to manage
+- Support for the WebSocket Protocol
+- Handle API versioning (v1, v2, ...)
+- Handle different environments (dev, test, prod, ...)
+- Handle security (Authentication and Authorization)
+- Create API Keys, handle request throttling
+- Swagger / Open API import to quickly define APIs
+- Transform and validate requests and responses
+- Generate SDK and API specifications
+- Cache API responses
+
+<p align="center">
+  <img src="../images/apigateway1.png" width="400">
+  <br/>
+</p>
+
+### API Gateway - Integrations High Level
+- Lambda function
+  - Invoke lambda function
+  - Easy way to expose REST API backed by AWS Lambda
+- HTTP
+  - Expose HTTP endpoints
+- AWS Service
+  - Expose any AWS API through the API Gateway
+    - Example: start an AWS Step Function workflow.
+
+<p align="center">
+  <img src="../images/apigateway2.png" width="400">
+  <br/>
+</p>
+
+### API Gateway - Endpoint Types
+- Edge-Optimized (default): For global clients
+  - Requests are routed through the CloudFront Edge Locations (improves latency)
+  - Which could help in cases where your clients are geographically distributed. 
+  - The API Gateway still lives in only one region
+- Regional
+  - For clients within the same region
+- Private
+  - Can only be accessed from your VPC using an interface VPC endpoint (ENI)
+
+### API Gateway - Security
+- User Authentication through
+  - IAM Roles (useful for internal applications)
+  - Cognito (identity for external users - example mobile users)
+  - Custom Authorizer (your own logic)
+- Custom Domain Name HTTPS security through integration with AWS Certificate Manager (ACM)
+  - If using Edge-Optimized endpoint, then the certificate must be in us-east-1
+  - If using Regional endpoint, the certificate must be in the API Gateway region
