@@ -34,7 +34,7 @@ There are several authentication methods. These include:
   - An example of one such feature is Google. With a single login, you can access all of their services like Gmail, Photos, Drive, and many more. Other applications also allow users to use Google login for authentication provided they have their system integrated with Identity Providers like Google, Facebook, etc.
 
     <p align="center">
-      <img src="images/SSO.png" width="300">
+      <img src="../../../images/SSO.png" width="300">
       <br/>
       <a href="https://www.onelogin.com/images/patterns/text-image/sso-types.png">Understanding Session-Based Authentication from Scratch</a>
     </p>
@@ -64,13 +64,13 @@ There are several authentication methods. These include:
   - Keep sensitive data on the server, which can be a security advantage
 
     <p align="center">
-      <img src="images/sessionAuthentication.png" width="300">
+      <img src="../../../images/sessionAuthentication.png" width="300">
       <br/>
       <a href="https://medium.com/@884m884/understanding-session-based-authentication-from-scratch-64110bcfc00f">Understanding Session-Based Authentication from Scratch</a>
     </p>
 
     <p align="center">
-      <img src="images/CentralizedSession.png"  width="400">
+      <img src="../../../images/CentralizedSession.png"  width="400">
       <br/>
       <i>Source: ByteByteGo.com</i>
     </p>
@@ -100,7 +100,7 @@ There are several authentication methods. These include:
     - RSA and ECDSA  are asymmetric signing methods, the private key is used  to sign the token and the public key to verify it.
 
   <p align="center">
-    <img src="images/HMACvsRSAandECDSA.png"  width="400">
+    <img src="../../../images/HMACvsRSAandECDSA.png"  width="400">
     <br/>
     <i>Source: ByteByteGo.com</a></i>
   </p>
@@ -114,7 +114,7 @@ There are several authentication methods. These include:
 
   - **Session vs JWT**
     <p align="center">
-      <img src="images/SessionVsJWT.png"  width="400">
+      <img src="../../../images/SessionVsJWT.png"  width="400">
       <br/>
       <i>Source: ByteByteGo.com</a></i>
     </p>
