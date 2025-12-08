@@ -1,5 +1,15 @@
 # A Fast Growing Start-up Company
 
+<<<<<<< HEAD
+Each business need is unique and there is no definitive formula to choose how resources should be grouped together.
+But there are some recommendations. And the first one is to group workloads based on business purpose and ownership.
+Different business units or product teams might have different processes.
+An option is to isolate distinct business units into different groups.
+Business units isolation can help teams operate with greater decentralized control while still having security guardrails.
+
+
+=======
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 ## Requirements: 
 
 - Design a plan for how to manage multiple AWS accounts.
@@ -15,7 +25,11 @@ To group workloads based on business purpose and ownership. For example:
     
 Customer A can have its own organizational unit (OU). Within that OU, customer A can have three other OUs.
     - One for Dev, another for testing,
+<<<<<<< HEAD
+    - and another OU for production. 
+=======
     -  and another OU for production. 
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 
 In the Dev organizational unit, developers can have dedicated AWS accounts for themselves with a cloud IDE configured.
 With the help of mechanisms, such as SCP or Service Control Policies in AWS organizations, you can prevent developers
@@ -28,8 +42,12 @@ All that while still having billing controls  individually per account.
   <i>Source: Architecting Solutions on AWS - <a>https://www.coursera.org/learn/architecting-solutions-on-aws</a></i>
 </p>
 
+<<<<<<< HEAD
+Splitting all that into separate AWS accounts facilitates governance and access, making it easier for example, to limit the access to the product account to only members from the Cloud Center of Excellence or the most experienced people in the company.
+=======
 Splitting all that into separate AWS accounts facilitates governance and access, making it easier for example, to limit the access to the product account
 to only members from the Cloud Center of Excellence or the most experienced people in the company.
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 
 Also, billing in AWS is naturally charged per account, so having multiple accounts facilitates billing a lot, making it easier to identify potential billing bottlenecks. 
 
@@ -46,6 +64,10 @@ Benefits of multiple accounts:
 6. Distribute AWS service quotas  and API request rate limits across accounts.
 
 ### IAM Roles - The AWS Authentication Core Mechanism
+<<<<<<< HEAD
+Users have permanent credentials and roles provide a temporary credential or a URL for sign in. 
+=======
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 
 <p align="center">
   <img src="../images/IAMRolesAccrossAccounts1.png" width="400">

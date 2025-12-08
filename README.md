@@ -143,6 +143,11 @@ System  desing personal notes
 	- Embedded database
 		- Berkeley DB
 		- SQLite
+<<<<<<< HEAD
+	- Vector Database
+		- Milvus
+=======
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 	- [Data Warehouse](https://github.com/CALlanoR/SystemDesign/blob/main/DataWarehouse/DataWarehouse.md)
 - Git (GitHub, BitBucket, GitLab)
 	- Basic commands
@@ -206,7 +211,14 @@ System  desing personal notes
 	- Definition and difference with integration testing and functional testing
 - Infrastructure as code 
     - Terraform
+<<<<<<< HEAD
+- AI
+	- Prompt Engineering
+	- Context Engineering
+	- Agents
+=======
 - Prompt Engineering for Developers (IA)
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 - Parallel programming on GPU's (CUDA)
 	- https://www.udemy.com/course/cuda-programming-masterclass/?couponCode=KEEPLEARNING
 - Domain Driven Desing
@@ -227,6 +239,15 @@ System  desing personal notes
 				- gRPC
 				- GraphQL
 				- Web Sockets
+<<<<<<< HEAD
+				- Webhooks
+				- EDA (Event-Drive Architecture)
+				- EDI (Electronic DAta Interchange)
+				- SSE (Server-Sent Events)
+				- AMQP
+				- MQTT
+=======
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 		- Modifiability
 		- Performance
 			- [Tactics](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Performance/Tactics.md)
@@ -234,6 +255,16 @@ System  desing personal notes
 			- Scalability Databases
 		- Safety
 		- Security
+<<<<<<< HEAD
+			- Network Attacks
+				- DDos
+				- DNS Spoofing
+				- MITM
+				- Rootkits
+				- Botnets
+				- IP Spoofing
+=======
+>>>>>>> fb6ccd846296da2115ba1b63a384d328eb0f992e
 			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Security/WebSecurity.md)
 			- [Top 10 OWASP](https://owasp.org/Top10/)
 		- Testability
