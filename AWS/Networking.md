@@ -2,16 +2,15 @@
 - A network can be logically partitioned into subnets.
 
 ## IP addresses
-    - The IP address is 192.0.2.0. Each of the four dot (.)-separated numbers of the IP
+- The IP address is 192.0.2.0. Each of the four dot (.)-separated numbers of the IP
 address represents 8 bits in octal number format. That means each of the four numbers can be
 anything from 0 to 255. The combined total of the four numbers for an IP address is 32 bits in
 binary format.
-    - A 32-bit IP address is called an IPv4 address.
-    - IPv6 addresses, which are 128 bits, are also available.
-    - An IPv6 address is composed of eight groups of four letters and numbers that are separated by
+- A 32-bit IP address is called an IPv4 address.
+- IPv6 addresses, which are 128 bits, are also available.
+- An IPv6 address is composed of eight groups of four letters and numbers that are separated by
 colons (:)
-    - Each
-of the eight colon-separated groups of the IPv6 address represents 16 bits in hexadecimal
+- Each of the eight colon-separated groups of the IPv6 address represents 16 bits in hexadecimal
 number format (Total 128 bits).
 
 <p align="center">
@@ -19,29 +18,29 @@ number format (Total 128 bits).
   <br/>
 </p>
 
-    - the CIDR address is 192.0.2.0/24. The last number (24) tells you that the first 24
+- the CIDR address is 192.0.2.0/24. The last number (24) tells you that the first 24
 bits must be fixed. The last 8 bits are flexible, which means that 2 8 (or 256) IP addresses are
 available for the network, which range from 192.0.2.0 to 192.0.2.255.
-    - If the CIDR was 192.0.2.0/16, the last number (16) tells you that the first 16 bits must be fixed.
+- If the CIDR was 192.0.2.0/16, the last number (16) tells you that the first 16 bits must be fixed.
 The last 16 bits are flexible, which means that 216 (or 65,536) IP addresses are available for the
 network, ranging from 192.0.0.0 to 192.0.255.255.
-    - There are two special cases:
-        - Fixed IP addresses, in which every bit is fixed, represent a single IP address (for example,
+- There are two special cases:
+    - Fixed IP addresses, in which every bit is fixed, represent a single IP address (for example,
 192.0.2.0/32). This type of address is helpful when you want to set up a firewall rule and give
 access to a specific host.
-        - The internet, in which every bit is flexible, is represented as 0.0.0.0/0
+    - The internet, in which every bit is flexible, is represented as 0.0.0.0/0
 
 <p align="center">
   <img src="../images/osi.png" width="600">
   <br/>
 </p>
 
-    - The Open Systems Interconnection (OSI) model is a conceptual model that is used to explain how
+- The Open Systems Interconnection (OSI) model is a conceptual model that is used to explain how
 data travels over a network.
-    - It consists of seven layers and shows the common protocols and
+- It consists of seven layers and shows the common protocols and
 addresses that are used to send data at each layer. 
-    - hubs and switches work at layer 2 (the data link layer). 
-    - Routers work at layer 3 (the network layer).
+- hubs and switches work at layer 2 (the data link layer). 
+- Routers work at layer 3 (the network layer).
 
 
 ## VPC
@@ -176,6 +175,21 @@ more consistent network experience than internet-based connections. DX uses open
 </p>
 
 ## VPC Endpoints
+### Why are VPC Endpoints necessary?
+By default, many AWS services like S3 or DynamoDB exist outside of your VPC on the public AWS network. If you have a database or a Docker container in a private subnet (without a public IP) and you want it to connect to S3, you would normally have two options:
+- Assign a public IP to your instance (insecure).
+- Use a NAT Gateway to access the internet (expensive).
+
+A VPC Endpoint is a "private door" that allows your traffic to travel from your VPC to the AWS service without ever leaving the Amazon network. This improves security and reduces data transfer costs.
+
+### Do you need a VPC Endpoint as soon as you create an account and a VPC?
+It is not mandatory, but it is highly recommended.
+
+When you create a VPC, services like S3 do not strictly require a VPC Endpoint to work, but the way you access them changes:
+- Without a VPC Endpoint: Your requests to S3 travel through the public internet. If your code is running in a private instance, you will need a NAT Gateway.
+- With a VPC Endpoint (Gateway Type for S3): The VPC knows that when you request something from S3, it should send it through an internal AWS route. S3 is one of two services (along with DynamoDB) that offers a "Gateway Endpoint," which is free of charge.
+
+### What is a VPC Endpoint?
 A VPC endpoint is a virtual device that enables you to privately connect your VPC to supported
 AWS services and VPC endpoint services that are powered by AWS PrivateLink. Connection to
 these services does not require an internet gateway, NAT device, VPN connection, or AWS Direct
@@ -187,3 +201,212 @@ Amazon network.
   <img src="../images/vpcendpoints.png" width="600">
   <br/>
 </p>
+
+There are two types of VPC endpoints:
+- **An interface VPC endpoint** (interface endpoint) enables you to connect to services that are
+powered by AWS PrivateLink. These services include some AWS services, services that are
+hosted by other AWS customers and AWS Partner Network (APN) Partners in their own VPCs
+(referred to as endpoint services), and supported AWS Marketplace APN Partner services. The
+owner of the service is the service provider, and you—as the principal who creates the
+interface endpoint—are the service consumer. 
+- **Gateway endpoints:** The use of gateway endpoints incurs no additional charge. Standard
+charges for data transfer and resource usage apply.
+
+## AWS Transit Gateway
+You can configure your VPCs in several ways, and take advantage of numerous connectivity
+options and gateways. These options and gateways include AWS Direct Connect (via DX
+gateways), NAT gateways, internet gateways, VPC peering, etc. It is not uncommon to find AWS
+customers with hundreds of VPCs distributed across AWS accounts and Regions to serve multiple
+lines of business, teams, projects, and so forth. Things get more complex when customers start to
+set up connectivity between their VPCs. All the connectivity options are strictly point-to-point, so
+the number of VPC-to-VPC connections can grow quickly. As you grow the number of workloads
+that run on AWS, you must be able to scale your networks across multiple accounts and VPCs to
+keep up with the growth.
+
+<p align="center">
+  <img src="../images/awstransitgateway.png" width="600">
+  <br/>
+</p>
+
+To solve this problem, you can use AWS Transit Gateway to simplify your networking model. With
+AWS Transit Gateway, you only need to create and manage a single connection from the central
+gateway into each VPC, on-premises data center, or remote office across your network. 
+
+A transit gateway acts as a hub that controls how traffic is routed among all the connected networks,
+which act like spokes. This hub-and-spoke model significantly simplifies management and
+reduces operational costs because each network only needs to connect to the transit gateway
+and not to every other network. 
+
+Any new VPC is connected to the transit gateway, and is then
+automatically available to every other network that is connected to the transit gateway. This ease
+of connectivity makes it easier to scale your network as you grow.
+
+## Summary:
+There are several VPC networking options, which include:
+- Internet gateway: Connects your VPC to the internet
+- NAT gateway: Enables instances in a private subnet to connect to the internet
+- VPC endpoint: Connects your VPC to supported AWS services
+- VPC peering: Connects your VPC to other VPCs
+- VPC sharing: Allows multiple AWS accounts to create their application resources into
+shared, centrally-managed Amazon VPCs
+- AWS Site-to-Site VPN: Connects your VPC to remote networks
+- AWS Direct Connect: Connects your VPC to a remote network by using a dedicated
+network connection
+- AWS Transit Gateway: A hub-and-spoke connection alternative to VPC peering
+
+# VPC Security
+## Security Groups
+A security group acts as a virtual firewall for your instance, and it controls inbound and outbound
+traffic. Security groups act at the instance level, not the subnet level. Therefore, each instance in
+a subnet in your VPC can be assigned to a different set of security groups.
+
+<p align="center">
+  <img src="../images/securitygroups2.png" width="600">
+  <br/>
+</p>
+
+Security groups have rules that control the inbound and outbound traffic. When you create a
+security group, it has no inbound rules. Therefore, no inbound traffic that originates from another
+host to your instance is allowed until you add inbound rules to the security group. By default, a
+security group includes an outbound rule that allows all outbound traffic. You can remove the
+rule and add outbound rules that allow specific outbound traffic only. If your security group has
+no outbound rules, no outbound traffic that originates from your instance is allowed.
+
+
+<p align="center">
+  <img src="../images/securitygroups3.png" width="600">
+  <br/>
+</p>
+
+Examples:
+
+<p align="center">
+  <img src="../images/securitygroups4.png" width="600">
+  <br/>
+</p>
+
+## Network access control list (network ACL)
+A network access control list (network ACL) is an optional layer of security for your Amazon VPC. It
+acts as a firewall for controlling traffic in and out of one or more subnets. To add another layer of
+security to your VPC, you can set up network ACLs with rules that are similar to your security
+groups.
+
+<p align="center">
+  <img src="../images/acl1.png" width="600">
+  <br/>
+</p>
+Each subnet in your VPC must be associated with a network ACL. If you don't explicitly associate a
+subnet with a network ACL, the subnet is automatically associated with the default network ACL.
+You can associate a network ACL with multiple subnets; however, a subnet can be associated with
+only one network ACL at a time. When you associate a network ACL with a subnet, the previous
+association is removed.
+
+<p align="center">
+  <img src="../images/acl2.png" width="600">
+  <br/>
+</p>
+
+Network ACLs are stateless, which means that no information about a request is maintained after
+a request is processed.
+
+### Custom ACL
+<p align="center">
+  <img src="../images/acl3.png" width="600">
+  <br/>
+</p>
+
+A network ACL contains a numbered list of rules that are evaluated in order, starting with the
+lowest numbered rule. The purpose is to determine whether traffic is allowed in or out of any
+subnet that is associated with the network ACL. The highest number that you can use for a rule is
+32,766. AWS recommends that you create rules in increments (for example, increments of 10 or
+100) so that you can insert new rules where you need them later.
+
+### ACL vs Security Groups
+<p align="center">
+  <img src="../images/acl4.png" width="600">
+  <br/>
+</p>
+
+# Amazon Route 53
+<p align="center">
+  <img src="../images/route53_1.png" width="600">
+  <br/>
+</p>
+
+<p align="center">
+  <img src="../images/route53_2.png" width="600">
+  <br/>
+</p>
+
+Amazon Route 53 supports several types of routing policies, which determine how Amazon Route
+53 responds to queries:
+- **Simple routing (round robin)** – Use for a single resource that performs a given function for your
+domain (such as a web server that serves content for the example.com website).
+- **Weighted round robin routing** – Use to route traffic to multiple resources in proportions that
+you specify. Enables you to assign weights to resource record sets to specify the frequency
+with which different responses are served. You might want to use this capability to do A/B
+testing, which is when you send a small portion of traffic to a server where you made a
+software change. For instance, suppose you have two record sets that are associated with one
+DNS name: one with weight 3 and one with weight 1. In this case, 75 percent of the time,
+Amazon Route 53 will return the record set with weight 3, and 25 percent of the time, Amazon
+Route 53 will return the record set with weight 1. Weights can be any number between 0 and
+255.
+- **Latency routing (LBR)** – Use when you have resources in multiple AWS Regions and you want
+to route traffic to the Region that provides the best latency. Latency routing works by routing
+your customers to the AWS endpoint (for example, Amazon EC2 instances, Elastic IP addresses,
+or load balancers) that provides the fastest experience based on actual performance
+measurements of the different AWS Regions where your application runs.
+- **Geolocation routing** – Use when you want to route traffic based on the location of your users.
+When you use geolocation routing, you can localize your content and present some or all of
+your website in the language of your users. You can also use geolocation routing to restrict the
+distribution of content to only the locations where you have distribution rights. Another
+possible use is for balancing the load across endpoints in a predictable, easy-to-manage way,
+so that each user location is consistently routed to the same endpoint.
+- **Geoproximity routing** – Use when you want to route traffic based on the location of your
+resources and, optionally, shift traffic from resources in one location to resources in another.
+- **Failover routing (DNS failover)** – Use when you want to configure active-passive failover. Amazon
+Route 53 can help detect an outage of your website and redirect your users to alternate locations
+where your application is operating properly. When you enable this feature, Amazon Route 53
+health-checking agents will monitor each location or endpoint of your application to determine
+its availability. You can take advantage of this feature to increase the availability of your customer-
+facing application.
+- **Multivalue answer routing**– Use when you want Route 53 to respond to DNS queries with up to
+eight healthy records that are selected at random. You can configure Amazon Route 53 to return
+multiple values—such as IP addresses for your web servers—in response to DNS queries. You can
+specify multiple values for almost any record, but multivalue answer routing also enables you to
+check the health of each resource so that Route 53 returns only values for healthy resources. It's
+not a substitute for a load balancer, but the ability to return multiple health-checkable IP
+addresses is a way to use DNS to improve availability and load balancing.
+
+<p align="center">
+  <img src="../images/route53_3.png" width="600">
+  <br/>
+</p>
+
+Multi-Region deployment is an example use case for Amazon Route 53. With Amazon Route 53,
+the user is automatically directed to the Elastic Load Balancing load balancer that’s closest to the
+user.
+
+<p align="center">
+  <img src="../images/route53_4.png" width="600">
+  <br/>
+</p>
+
+# Amazon Cloud Front
+**A content delivery network (CDN)** is a globally distributed system of caching servers. A CDN
+caches copies of commonly requested files (static content, such as Hypertext Markup Language,
+or HTML; Cascading Style Sheets, or CSS; JavaScript; and image files) that are hosted on the
+application origin server. The CDN delivers a local copy of the requested content from a cache
+edge or Point of Presence that provides the fastest delivery to the requester.
+
+## Amazon Cloud Front
+- Fast, global, and secure CDN service
+- Global network of edge locations and Regional edge caches
+- Self-service model
+- Pay-as-you-go pricing
+- Securely delivers data, videos, applications, and application programming interfaces (APIs) to customers globally with low latency and high transfer speeds.
+
+https://aws.amazon.com/cloudfront/features/?nc=sn&amp;loc=2
+
+- Edge Locations: CloudFront edge locations are designed to serve popular content quickly to your viewers.
+- Regional edge caches: For the less popular content

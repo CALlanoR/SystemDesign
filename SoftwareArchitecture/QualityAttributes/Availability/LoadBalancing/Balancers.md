@@ -1,7 +1,34 @@
 # Load Balancing Algorithms
 A load balancing algorithm is a method used by a load balancer to distribute incoming traffic and requests among multiple servers or resources. The primary purpose of a load balancing algorithm is to ensure efficient utilization of available resources, improve overall system performance, and maintain high availability and reliability.
 
+To utilize full scalability and redundancy, we can try to balance the load at each layer of the system. We can add LBs at three places:
+
+    Between the user and the web server
+    Between web servers and an internal platform layer, like application servers or cache servers
+    Between internal platform layer and database.
+
+<p align="center">
+  <img src="../../../../images/softwarearchitecture/lb1.png" width="300">
+</p>
+
+## Benefits of Load Balancing
+- Users experience faster, uninterrupted service. Users won’t have to wait for a single struggling server to finish its previous tasks. Instead, their requests are immediately passed on to a more readily available resource.
+- Service providers experience less downtime and higher throughput. Even a full server failure won’t affect the end user experience as the load balancer will simply route around it to a healthy server.
+- Load balancing makes it easier for system administrators to handle incoming requests while decreasing wait time for users.
+- Smart load balancers provide benefits like predictive analytics that determine traffic bottlenecks before they happen. As a result, the smart load balancer gives an organization actionable insights. These are key to automation and can help drive business decisions.
+- System administrators experience fewer failed or stressed components. Instead of a single device performing a lot of work, load balancing has several devices perform a little bit of work.
+
+## Redundant Load Balancers
+- The load balancer can be a single point of failure; to overcome this, a second load balancer can be connected to the first to form a cluster. Each LB monitors the health of the other and, since both of them are equally capable of serving traffic and failure detection, in the event the main load balancer fails, the second load balancer takes over.
+
+<p align="center">
+  <img src="../../../../images/softwarearchitecture/rlb.png" width="300">
+</p>
+
+
+## Load Balancing Algorithms
 Load balancing algorithms help to prevent any single server or resource from becoming overwhelmed, which could lead to performance degradation or failure. By distributing the workload, load balancing algorithms can optimize response times, maximize throughput, and enhance user experience. These algorithms can consider factors such as server capacity, active connections, response times, and server health, among others, to make informed decisions on how to best distribute incoming requests.
+
 
 1. Round Robin
 
