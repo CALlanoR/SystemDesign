@@ -3,11 +3,13 @@ System  desing personal notes
 
 - Programming Languages (proficient in at least one programing language)
 	- Python
+		- [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/basics.md)
+		- [GIL](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/gil.md)
 	- Java
 	- Kotlin
 	- Go
 	- Rust
-	- C/C++
+	- C/C++	
 	- Erlang
 - [Programming paradigms](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md)
 	- [Imperative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#imperative-paradigm)
@@ -154,17 +156,14 @@ System  desing personal notes
 	- Stashing
 	- Tagging
 	- Code Review
-- Linux
-	- Introduction
-	- Download, Install and Configure
-	- System Access and File System
+- [Linux](https://github.com/CALlanoR/SystemDesign/blob/main/Linux/Linux.md)
+	- [Introduction](https://github.com/CALlanoR/SystemDesign/blob/main/Linux/Linux.md#introduction)
 	- Linux fundamentals
+		- [Basic commands](https://github.com/CALlanoR/SystemDesign/blob/main/Linux/Linux.md#basic-commands)
 		- Files and Directory Permissions
 			- chmod
 			- chown
 			- chgrp
-		- Help commands
-		- Tab and Up arrow keys
 		- Adding Text to Files
 		- Input and Output Redirects
 		- Standard Output to a File
