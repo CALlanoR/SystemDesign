@@ -78,7 +78,7 @@ It is a programming paradigm where programs are coded by applying and composing 
 
 Simply put, in functional programming, functions can be assigned to variables, returned from other functions, and passed as arguments. Some examples are Erlang, Haskell, Lisp, Scala, PureScript, Elixir, and more.
 
-### Database/Data driven programming approach
+### Database Data driven programming approach
 This programming methodology is based on data and its movement. Program statements are defined by data rather than hard-coding a series of steps. A database program is the heart of a business information system and provides file creation, data entry, update, query and reporting functions. There are several programming languages that are developed mostly for database application. For example SQL. It is applied to streams of structured data, for filtering, transforming, aggregating (such as computing statistics), or calling other programs.
 
 ## Other Important Paradigms:
