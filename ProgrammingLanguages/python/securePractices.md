@@ -79,6 +79,7 @@ print(f"Original: {data_decrypted.decode()}")
     - Salting and Hashing (For Passwords)
         - If you need to store user passwords, don't use encryption; use salted hashing (like bcrypt or Argon2). Encryption is reversible; hashing should not be.
         - Example:
+
 ```
 import bcrypt
 
@@ -106,7 +107,7 @@ Never store passwords in plain text. Use cryptographic hashing algorithms like b
 10. Protect Against Cross-Site Scripting (XSS)
 XSS attacks occur when an attacker injects malicious scripts into web applications viewed by other users. Sanitize and escape user-generated content properly to prevent these attacks. Frameworks like Flask and Django provide built-in protection against XSS.
 
-11. 9. Regular Security Audits
+11. Regular Security Audits
 - Periodically conduct security audits and vulnerability assessments of your codebase. 
 - Utilize static code analysis tools like `bandit` to identify potential security flaws early in the development process.
     - Bandit identifies common security issues in Python code through static analysis. The tool scans for patterns known to introduce vulnerabilities including hardcoded passwords, SQL injection risks, and insecure cryptographic practices. 
