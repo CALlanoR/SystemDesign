@@ -86,10 +86,10 @@ System  desing personal notes
 		- Abstract Factory
 		- Prototype
 		- Builder
-		- Singleton
+		- [Singleton](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/CreationalPatterns/Singleton.md)
 	- [Structural Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/StructuralPatterns/Summary.md)
 		- [Adapter](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/StructuralPatterns/Adapter.md)
-		- Bridge
+		- [Bridge](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/StructuralPatterns/Bridge.md)
 		- Composite
 		- Decorator
 		- Facade
@@ -103,7 +103,7 @@ System  desing personal notes
 		- Memento
 		- [Observer](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/BehavioralPatterns/Observer.md)
 		- State
-		- Strategy
+		- [Strategy](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/BehavioralPatterns/Strategy.md)
 		- Template Method
 		- Visitor
 	- [Concurrency Patterns](https://github.com/CALlanoR/SystemDesign/blob/main/DesignPatterns/ConcurrencyPatterns/Summary.md) 
