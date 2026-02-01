@@ -1,4 +1,4 @@
-# Section 1: Pricing Model
+# Pricing Model
 
 ## AWS Princing Model
     - AWS Free Tier

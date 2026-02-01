@@ -21,7 +21,7 @@ System  desing personal notes
 		- [Functional](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#functional-programming-paradigms)
 		- [Logic](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#logic-programming-paradigms)
 		- [Database/Data driven](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#database-data-driven-programming-approach)
-		- [Other](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#other-programming-paradigms)
+		- [Other](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#other-important-paradigms)
 - Data Structures
 	- Linear Data Structures
 		- Array & Matrix
