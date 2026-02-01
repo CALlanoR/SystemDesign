@@ -117,7 +117,7 @@ System  desing personal notes
 		- [Transactions](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#what-is-transactions)
 		- [ACID](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#what-is-acid)
 		- [CAP Theorem](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#cap-theorem)
-		- [PACELC Theorem](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#pacelc-theorem)
+		- [PACELC Theorem](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#the-pacelc-theorem)
 	- Designing Relational Databases
 		- Normalization
 	- Database indexes & Execution plan
@@ -125,7 +125,7 @@ System  desing personal notes
 	- Sharding Strategies
 	- Advance SQL Queries
     - SQL Databases
-        - [PostgreSQL](https://github.com/CALlanoR/SystemDesign/blob/main/DatabasesPostgreSQL.md)
+        - [PostgreSQL](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/SQL/PostgreSQL.md)
         - MySQL
 	- NoSQL Databases
 		- Document Databases
