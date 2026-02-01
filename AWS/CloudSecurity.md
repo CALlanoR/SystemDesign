@@ -75,9 +75,9 @@ access to your AWS resources.
 
 ## How can users access AWS?
 - To access AWS, there are three options:
-  1. AWS Management Console (protected by password + MFA)
-  2. AWS Command Line Interface (CLI): protected by access keys
-  3. AWS Software Developer Kit (SDK): for code, protected by access keys.
+1. AWS Management Console (protected by password + MFA)
+2. AWS Command Line Interface (CLI): protected by access keys
+3. AWS Software Developer Kit (SDK): for code, protected by access keys.
 
 - Access keys are generated through the AWS Console (users manage their own access keys - don't share your access keys)
   - Access key ID = username
@@ -95,17 +95,17 @@ access to your AWS resources.
 
 ### Securing a new AWS account: Account root user
 1. Stop using the account root user as soon as possible.
-  1.1 While you are logged in as the account root user, create an IAM user for yourself.
-  1.2 Save the access keys if needed.
-  1.3 Create an IAM group, give it full administrator permissions, and add the IAM user to the group.
-  1.4 Disable and remove your account root user access keys, if they exist.
-  1.5 Enable a password policy for users.
-  1.6 Sign in with your new IAM user credentials.
-  1.7 Store your account root user credentials in a secure place.
+  - While you are logged in as the account root user, create an IAM user for yourself.
+  - Save the access keys if needed.
+  - Create an IAM group, give it full administrator permissions, and add the IAM user to the group.
+  - Disable and remove your account root user access keys, if they exist.
+  - Enable a password policy for users.
+  - Sign in with your new IAM user credentials.
+  - Store your account root user credentials in a secure place.
 2. Enable multi-factor authentication (MFA)
-  2.1 Require MFA for your account root user and for all IAM users.
+  - Require MFA for your account root user and for all IAM users.
 3. Use AWS CloudTrail.
-  3.1 CloudTrail tracks user activity on your account.
+  - CloudTrail tracks user activity on your account.
 4. Enable a billing report, such as the AWS Cost and Usage Report.
 
 
