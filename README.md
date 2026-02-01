@@ -114,9 +114,10 @@ System  desing personal notes
     - Gain insights into load-balancing concepts and implementation.
 - Databases
 	- Basic concepts
-		- ACID
-		- Transactions
-		- CAP Theorem
+		- [Transactions](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#what-is-transactions)
+		- [ACID](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#what-is-acid)
+		- [CAP Theorem](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#cap-theorem)
+		- [PACELC Theorem](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/ACID.md#pacelc-theorem)
 	- Designing Relational Databases
 		- Normalization
 	- Database indexes & Execution plan
@@ -124,7 +125,7 @@ System  desing personal notes
 	- Sharding Strategies
 	- Advance SQL Queries
     - SQL Databases
-        - [PostgreSQL](https://github.com/CALlanoR/SystemDesign/blob/main/PostgreSQL.md)
+        - [PostgreSQL](https://github.com/CALlanoR/SystemDesign/blob/main/DatabasesPostgreSQL.md)
         - MySQL
 	- NoSQL Databases
 		- Document Databases
