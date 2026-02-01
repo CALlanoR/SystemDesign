@@ -1,4 +1,5 @@
 - PostgreSQL
     - [Internals](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/SQL/PostgreSQL/Internals.md)
+    - [Indexes](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/SQL/PostgreSQL/Indexes.md)
     - [Admin queries](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/SQL/PostgreSQL/AdminQueries.md)
     - [Access to table in remote database](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/SQL/PostgreSQL/AccessToTableInRemoteDatabase.md)

@@ -125,7 +125,7 @@ System  desing personal notes
 	- Sharding Strategies
 	- Advance SQL Queries
     - SQL Databases
-        - [PostgreSQL](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/SQL/PostgreSQL.md)
+        - [PostgreSQL](https://github.com/CALlanoR/SystemDesign/blob/main/Databases/SQL/PostgreSQL/PostgreSQL.md)
         - MySQL
 	- NoSQL Databases
 		- Document Databases
