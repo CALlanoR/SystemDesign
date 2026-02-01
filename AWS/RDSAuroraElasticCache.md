@@ -1,4 +1,4 @@
-# Section 9: AWS Fundamentals: RDS + Aurora + ElasticCache
+# AWS Fundamentals: RDS + Aurora + ElasticCache
 
 ### Amazon RDS Overview
 It’s a managed DB service managed by AWS (use SQL)

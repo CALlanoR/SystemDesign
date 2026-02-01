@@ -1,4 +1,4 @@
-# Section 19: Serverless Overviews from a Solution Architect Perspective
+# Serverless Overviews from a Solution Architect Perspective
 
 Serveless is a new paradigm in which the developers don’t have to manage or provisioning servers anymore. Just deploy code (functions).
 - AWS Lambda

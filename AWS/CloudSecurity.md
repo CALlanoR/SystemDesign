@@ -1,4 +1,4 @@
-# Section 4: Cloud Security - IAM & AWS CLI
+# Cloud Security - IAM & AWS CLI
 
 ## AWS Shared responsability model
 <p align="center">

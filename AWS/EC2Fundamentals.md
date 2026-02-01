@@ -1,4 +1,4 @@
-# Section 5: EC2 Fundamentals
+# EC2 Fundamentals
 
 ### Billing and Cost Managment
 **AWS Budgets:** Alert you when your budget thresholds are exceeded (or forecasted to exceed)

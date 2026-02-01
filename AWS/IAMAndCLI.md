@@ -1,4 +1,4 @@
-# Section 4: IAM & AWS CLI
+# IAM & AWS CLI
 
 ## IAM (Identity and Access Management, Global Service): Users & Groups
 In AWS you apply the least privilege principle: don’t give more permissions than a user needs.

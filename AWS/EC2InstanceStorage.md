@@ -1,4 +1,4 @@
-# Section 7: EC2  Instance Storage
+# EC2  Instance Storage
 
 What’s an EBS  Overview? Network USB  stick
 

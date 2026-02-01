@@ -1,4 +1,4 @@
-# Section 3: Regions & AZ
+# Regions & AZ
 
 ## AWS Global Infrastucture
 https://aws.amazon.com/about-aws/global-infrastructure/regions_az/

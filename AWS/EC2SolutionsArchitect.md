@@ -1,4 +1,4 @@
-# Section 5: EC2 Solutions Architect Associate Level
+# EC2 Solutions Architect Associate Level
 
 ### Private vs Public Ip (IPv4)
 - IPv4 the most common format used online (3.7billon addresses)
