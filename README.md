@@ -14,13 +14,14 @@ System  desing personal notes
 	- Erlang
 - [Programming paradigms](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md)
 	- [Imperative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#imperative-paradigm)
-		- Procedural (Imperative)
-		- Object Oriented
-		- Parallel processing
+		- [Procedural](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#procedural-programming)
+		- [Object Oriented](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#object-oriented-programming)
+		- [Parallel processing](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#parallel-processing)
 	- [Declarative](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#declarative-programming)
-		- Functional
-		- Logic
-		- Database/Data driven
+		- [Functional](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#functional-programming)
+		- [Logic](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#logic-programming)
+		- [Database/Data driven](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#database-data-driven-programming)
+		- [Other](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md#other-programming-paradigms)
 - Data Structures
 	- Linear Data Structures
 		- Array & Matrix
