@@ -1,0 +1,22 @@
+# Internals
+- A page is the smallest unit of storage that PostgreSQL reads from or writes to disk. 
+    - Visualise it as a big block of storage where you can stuff multiple rows.
+- A page is generally 8KB in size(configurable at compile time). 
+    - If an average row is ~100 bytes, a single page can hold dozens of rows after accounting for page headers and metadata.
+- Each row is called a tuple in PostgreSQL. 
+    Both indexes and data are stored in pages.
+- An index entry maps a key (id = 10) to a tuple identifier (TID), which identifies the page and offset where the row resides. For example:
+    - 10 -> (heap page 30, slot 4).
+    - This is stored in B-tree data structure.
+- Indexes are persisted on disk and only partially cached in memory. When you create more indexes, you increase the number of index pages competing for space in shared_buffers and the operating system page cache. PostgreSQL does not guarantee that any particular index will remain cached, so simply adding indexes does not ensure faster reads.
+- Indexes are persisted on disk and only partially cached in memory.
+- LIMIT reduces result size, not execution cost
+- SELECT * increases bandwidth and memory usage
+    - When you use SELECT *, PostgreSQL must:
+        - Fetch all columns from the heap
+        - Send all column data to the client
+        - Store larger result sets in memory(you get limited memory per connection where results are stored)
+    - If a table has wide columns (JSON, text, blobs), this can significantly increase:
+        - Network transfer
+        - Memory pressure
+        - Client-side processing cost
