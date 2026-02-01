@@ -8,4 +8,3 @@ AWS
 - [EC2 - AWS Fundamentals: RDS + Aurora + ElasticCache](https://github.com/CALlanoR/SystemDesign/blob/main/AWS/RDSAuroraElasticCache.md)
 - [S3](https://github.com/CALlanoR/SystemDesign/blob/main/AWS/S3.md)
 - [Serverless](https://github.com/CALlanoR/SystemDesign/blob/main/AWS/ServerlessOverview.md)
-- [IAM & CLI](https://github.com/CALlanoR/SystemDesign/blob/main/AWS/IAMAndCLI.md)
