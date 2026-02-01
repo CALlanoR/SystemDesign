@@ -1,5 +1,3 @@
-#  Behavioral Patterns
-
-- Deal with the details of assigning responsibilities between different objects
-- Describe the communication mechanism between objects
-- Deﬁne the mechanism for choosing different algorithms by different objects at runtime
+# Behavioral Patterns
+- Focus on allowing you to choose between different algorithms or how particular parts of your application should communicate.
+- Deﬁne the mechanism for choosing different algorithms by different objects at runtime.

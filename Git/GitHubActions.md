@@ -21,3 +21,58 @@
 - GitHub provides virtual machines, a.k.a. runners, to run your workflows on Linux, Windows, and macOS environments. You can also host your own self-hosted runners. Runners support any programming language, platform, and cloud provider, making GitHub flexible for various projects.
 
 - GitHub Actions seamlessly integrates with other GitHub features, such as Issues, PRs, and Marketplace, allowing you to create automated workflows based on events in your repository.
+
+Example:
+```yaml
+.github/workflows/deploy.yml
+
+name: CI/CD Pipeline to S3
+
+on:
+  push:
+    branches: [ main ]  # Triggers on every push to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Runs on the latest Ubuntu runner
+
+    steps:
+    # 1. Setup phase
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    # 2. Static Code Analysis (Linting)
+    - name: Static Code Analysis (Flake8)
+      run: |
+        pip install flake8
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+
+    # 3. Automated Testing (Unit Testing)
+    - name: Run Tests (Pytest)
+      run: |
+        pip install pytest
+        pytest tests/
+
+    # 4. Vulnerability Scanning (Security)
+    - name: Security Scan (Bandit)
+      run: |
+        pip install bandit
+        bandit -r . -f txt
+
+    # 5. Deployment to AWS S3
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: Deploy to S3
+      run: |
+        aws s3 sync ./dist s3://my-deployment-bucket --delete
+```

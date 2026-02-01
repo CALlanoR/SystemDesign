@@ -1,5 +1,5 @@
-# Structural patterns primarily:
-
+# Structural patterns
+- Explain how to assemble classes and objects to form larger structures keeping those structures flexible and efficient, those patterns deal more with how to organize different parts of your application.   
 - Deal with objects delegating responsibilities to other objects. This results
 in a layered architecture of components with low degree of coupling.
 - Facilitate interobject communication when one object is not accessible to

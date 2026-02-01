@@ -248,9 +248,11 @@ class Resource(ABC):
     @abstractmethod
     def validate_file_for_resource(self):
         """ This method validates the file for the resource """
+        pass
 
     def upload_file_to_gcp(self):
         """ This method uploads the file to GCP """
+        pass
 ```
 
 ```sh
