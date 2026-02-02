@@ -250,7 +250,7 @@ System  desing personal notes
 			- Scalability Databases
 		- Safety
 		- Security
-			-[Proxy](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Security/Proxy.md)
+			- [Proxy](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Security/Proxy.md)
 			- Network Attacks
 				- DDos
 				- DNS Spoofing
@@ -261,8 +261,8 @@ System  desing personal notes
 			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Security/WebSecurity.md)
 			- [Top 10 OWASP](https://owasp.org/Top10/)
 		- Testability
-			- [Advanced Techniques](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Testing/AdvancedTechniques.md)
-			- [BlackBox Techniques](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Testing/BlackBoxTechniques.md)
+			- [Advanced Techniques](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Testing/Advanced_Techniques.md)
+			- [BlackBox Techniques](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Testing/BlackBox_Techniques.md)
 		- [Serviceability](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Serviceability/Serviceability.md)
 		- Usability
 		- [Reliability](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Reliability/Reliability.md)
