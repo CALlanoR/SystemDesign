@@ -224,9 +224,11 @@ System  desing personal notes
 		- Role of Architects in Projects
 		- Architecture Competence
 			 - Duties, Skills and Knowledge
-			 - Become a Better Architect 
+			 - Become a Better Architect
+	- [Functional and non-functional requirements](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/FunctionalAndNonFunctionalRequirements.md)
 	- Quality Attributes
-		- Availability
+		- [Availability](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Availability/Availability.md)
+		- [Scalability](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Scalability/Scalability.md)
 		- Deployability
 		- Integrability
 			- Development and management of APIs
@@ -244,10 +246,11 @@ System  desing personal notes
 		- Modifiability
 		- Performance
 			- [Tactics](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Performance/Tactics.md)
-			- Caching
+			- [Caching](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Performance/Caching.md)
 			- Scalability Databases
 		- Safety
 		- Security
+			-[Proxy](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Security/Proxy.md)
 			- Network Attacks
 				- DDos
 				- DNS Spoofing
@@ -258,7 +261,11 @@ System  desing personal notes
 			- [Web Security](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Security/WebSecurity.md)
 			- [Top 10 OWASP](https://owasp.org/Top10/)
 		- Testability
+			- [Advanced Techniques](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Testing/AdvancedTechniques.md)
+			- [BlackBox Techniques](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Testing/BlackBoxTechniques.md)
+		- [Serviceability](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Serviceability/Serviceability.md)
 		- Usability
+		- [Reliability](https://github.com/CALlanoR/SystemDesign/blob/main/SoftwareArchitecture/QualityAttributes/Reliability/Reliability.md)
 		- Observability
 			- RPS (Request per second)
 			- Metrícas de volumetria,
