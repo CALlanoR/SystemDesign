@@ -51,6 +51,9 @@
         print(compute(5))  # Computes and caches: Output: 25
         print(compute(5))  # Retrieves from cache: Output: 25
     ```
+    - Custom context managers
+        - Building a context manager using __enter__ and __exit__ methods lets you automate resource management. For example, you can design a custom context manager to handle file operations—opening a file when you enter a block and ensuring it closes when you exit. 
+    ```
         class FileHandler:
         def __init__(self, filename, mode):
             self.filename = filename
