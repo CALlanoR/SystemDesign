@@ -3,7 +3,9 @@ System  desing personal notes
 
 - Programming Languages (proficient in at least one programing language)
 	- Python
-		- [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/basics.md)
+		- [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Basics.md)
+		- Advanced concepts
+			- [Dunder methods](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/DunderMethods.md)
 			- [Secure practices](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/securePractices.md)
 		- [GIL](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/gil.md)
 	- Java
