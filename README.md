@@ -6,8 +6,9 @@ System  desing personal notes
 		- [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Basics.md)
 		- Advanced concepts
 			- [Dunder methods](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/DunderMethods.md)
-			- [Secure practices](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/securePractices.md)
-		- [GIL](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/gil.md)
+			- [GIL](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/gil.md)
+		- [Secure practices](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/securePractices.md)
+
 	- Java
 	- Kotlin
 	- Go

@@ -176,7 +176,30 @@ The Linux boot process is the procedure for initializing the system. It consists
   help cd                # Show help for built-in shell commands like 'cd'
   ls --help              # Most commands support a --help flag for quick info
   ```
-- **exit**: Exit the shell.
-  ```bash
   exit                   # Log out of the current shell session
   ```
+
+- **sudo**: Execute a command as the superuser.
+  ```bash
+  sudo apt update        # Update package list
+  sudo systemctl restart nginx  # Restart a service
+  sudo useradd newuser   # Add a new user
+    ```
+
+- **ln**: Create links between files.
+  ```bash
+  ln -s /path/to/original /path/to/link  # Create a symbolic link
+  sudo ln -s /opt/scripts/super-herramienta-v1.0.2-linux /usr/local/bin/herramienta
+  ls -l        # To see the links
+  ```
+
+- Hard link:
+  - In Linux, a file is divided into two parts:
+    - **The Inode:** This is the “body” of the file. It contains the actual data on the disk, the size, and the permissions. It does not have a name, but rather a number.
+    - **The name entry:** This is the "name" that you see. It is simply a label that points to an Inode number.
+
+  ```bash
+  ln file1.txt file2.txt                 # Create a hard link
+  ls -l        # To see the links
+  ```
+  - "A hard link is an additional directory entry for a file. Both the original name and the hard link point to the same inode, which contains the actual data on the disk. Even if you delete the original file, the data remains accessible through the hard link until the link count reaches zero."
