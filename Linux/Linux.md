@@ -157,6 +157,7 @@ The Linux boot process is the procedure for initializing the system. It consists
   ```bash
   du -sh foldername      # Show total size of a specific folder
   du -h                  # Show size of all files/directories recursively
+  du -h --max-depth=1    # Show size of all files/directories recursively up to depth 1
   ```
 - **free**: Display memory usage.
   ```bash
