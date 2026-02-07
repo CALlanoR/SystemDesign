@@ -15,7 +15,7 @@
     - **Metaprogramming hooks:** Methods like __init_subclass__ provide ways to customize class creation and behavior dynamically.
 - Examples:
     - Allow your objects to work naturally with arithmetic operators.
-      ```
+      ```python
         class Vector:
         def __init__(self, x, y):
                 self.x = x
@@ -33,7 +33,7 @@
         print(result)  # Output: Vector(4, 6)
         ```
     - Caching
-    ```
+    ```python
         class CachedComputation:
         def __init__(self):
                 self.cache = {}
@@ -53,7 +53,7 @@
     ```
     - Custom context managers
         - Building a context manager using __enter__ and __exit__ methods lets you automate resource management. For example, you can design a custom context manager to handle file operations—opening a file when you enter a block and ensuring it closes when you exit. 
-    ```
+    ```python
         class FileHandler:
         def __init__(self, filename, mode):
             self.filename = filename
@@ -71,7 +71,7 @@
     ```
     - Custom iterables and containers
         - To make your custom containers work with Python’s loops and comprehensions, implement the iteration protocol by defining methods like __iter__ and __next__. 
-        ```
+        ```python
         class Stack:
         def __init__(self):
             self.items = []

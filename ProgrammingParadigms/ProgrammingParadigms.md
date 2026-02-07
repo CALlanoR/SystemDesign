@@ -70,6 +70,11 @@ Examples of declarative programming languages include:
 - May require more advanced language features and runtime support
 - Limited control over low-level details and optimizations
 
+### Constraint programming paradigm
+Constraint programming (CP)[1] is a paradigm for solving combinatorial problems that draws on a wide range of techniques from artificial intelligence, computer science, and operations research. In constraint programming, users declaratively state the constraints on the feasible solutions for a set of decision variables.
+
+Constraint programming takes its root from and can be expressed in the form of constraint logic programming, which embeds constraints into a logic program. This variant of logic programming is due to Jaffar and Lassez,[2] who extended in 1987 a specific class of constraints that were introduced in Prolog II. The first implementations of constraint logic programming were Prolog III, CLP(R), and CHIP. 
+
 ### Logic programming paradigms
 A logic programming paradigm is a set of principles and techniques that guide the design and implementation of logic programs. A logic program consists of a collection of facts and rules that describe the relationships and properties of entities, and a query language that allows asking questions and obtaining answers from the program. A logic programming paradigm defines the syntax and semantics of the facts, rules, and queries, as well as the inference mechanism that derives new facts and rules from the existing ones.
 
@@ -95,6 +100,5 @@ This programming methodology is based on data and its movement. Program statemen
     *   **Languages:** Lisp, Ruby, Python, C++ (with templates)
 *   **Component-Based Programming:** Based on the development of applications by combining reusable components.
     *   **Languages/Frameworks:** .NET, Java EE (Enterprise JavaBeans - EJB), React, Angular, Vue.js (in the context of user interfaces)
-*   **Constraint Programming:** Defines a problem as a set of constraints that must be satisfied. The system finds solutions that meet those constraints.
     *   **Languages/Solvers:** Prolog (with constraint libraries), Choco (Java), Gecode (C++)
 *   **Domain-Driven Design (DDD):** Focuses on modeling software according to the problem domain, using a common language between developers and domain experts. While not a programming paradigm itself, it influences how code is structured and organized.

@@ -1,6 +1,7 @@
 # SystemDesign
 System  desing personal notes
-
+- Personal notes
+	- [Personal notes based in my experience](https://github.com/CALlanoR/SystemDesign/blob/main/PersonalNotes/PersonalNotes.md)
 - Programming Languages (proficient in at least one programing language)
 	- Python
 		- [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Basics.md)
@@ -162,6 +163,7 @@ System  desing personal notes
 	- Stashing
 	- Tagging
 	- Code Review
+	- [Configure Multiple Accounts](https://github.com/CALlanoR/SystemDesign/blob/main/Git/ConfigureMultipleAccounts.md)
 	- [GitHub Actions](https://github.com/CALlanoR/SystemDesign/blob/main/Git/GitHubActions.md)
 - [Linux](https://github.com/CALlanoR/SystemDesign/blob/main/Linux/Linux.md)
 	- [Introduction](https://github.com/CALlanoR/SystemDesign/blob/main/Linux/Linux.md#introduction)
