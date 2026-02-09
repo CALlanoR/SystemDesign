@@ -3,13 +3,7 @@ System  desing personal notes
 - Personal notes
 	- [Personal notes based in my experience](https://github.com/CALlanoR/SystemDesign/blob/main/PersonalNotes/PersonalNotes.md)
 - Programming Languages (proficient in at least one programing language)
-	- Python
-		- [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Basics.md)
-		- Advanced concepts
-			- [Dunder methods](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/DunderMethods.md)
-			- [GIL](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/gil.md)
-		- [Secure practices](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/securePractices.md)
-
+	- [Python](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Python.md)
 	- Java
 	- Kotlin
 	- Go

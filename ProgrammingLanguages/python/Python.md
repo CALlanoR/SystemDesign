@@ -1,0 +1,9 @@
+- [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Basics.md)
+- Advanced concepts
+    - [Dunder methods](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/DunderMethods.md)
+    - [Concurrency and parallelism](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ConcurrencyAndParallelism.md)
+        - [AsyncIO](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ConcurrencyAndParallelism.md#asyncio)
+        - [Threading](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ConcurrencyAndParallelism.md#threading)
+        - [Multiprocessing](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ConcurrencyAndParallelism.md#multiprocessing)	
+    - [GIL](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/gil.md)
+- [Secure practices](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/securePractices.md)
