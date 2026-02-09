@@ -17,12 +17,12 @@
     - Allow your objects to work naturally with arithmetic operators.
       ```python
         class Vector:
-        def __init__(self, x, y):
+            def __init__(self, x, y):
                 self.x = x
                 self.y = y
-        def __add__(self, other):
+            def __add__(self, other):
                 return Vector(self.x + other.x, self.y + other.y)
-        def __str__(self):
+            def __str__(self):
                 return f"Vector({self.x}, {self.y})"
 
         # Usage
@@ -36,14 +36,14 @@
     ```python
         class CachedComputation:
         def __init__(self):
-                self.cache = {}
+            self.cache = {}
         def __call__(self, x):
-                if x not in self.cache:
-                    self.cache[x] = self._expensive_computation(x)
-                return self.cache[x]
+            if x not in self.cache:
+                self.cache[x] = self._expensive_computation(x)
+            return self.cache[x]
         def _expensive_computation(self, x):
-                # Imagine a complex calculation here
-                return x ** 2
+            # Imagine a complex calculation here
+            return x ** 2
 
         # Usage
         compute = CachedComputation()
@@ -55,14 +55,14 @@
         - Building a context manager using __enter__ and __exit__ methods lets you automate resource management. For example, you can design a custom context manager to handle file operations—opening a file when you enter a block and ensuring it closes when you exit. 
     ```python
         class FileHandler:
-        def __init__(self, filename, mode):
-            self.filename = filename
-            self.mode = mode
-        def __enter__(self):
-            self.file = open(self.filename, self.mode)
-            return self.file
-        def __exit__(self, exc_type, exc_val, exc_tb):
-            self.file.close()
+            def __init__(self, filename, mode):
+                self.filename = filename
+                self.mode = mode
+            def __enter__(self):
+                self.file = open(self.filename, self.mode)
+                return self.file
+            def __exit__(self, exc_type, exc_val, exc_tb):
+                self.file.close()
 
         # Usage
         with FileHandler("example.txt", "r") as file:
@@ -73,21 +73,21 @@
         - To make your custom containers work with Python’s loops and comprehensions, implement the iteration protocol by defining methods like __iter__ and __next__. 
         ```python
         class Stack:
-        def __init__(self):
-            self.items = []
-        def push(self, item):
-            self.items.append(item)
-        def pop(self):
+            def __init__(self):
+                self.items = []
+            def push(self, item):
+                self.items.append(item)
+            def pop(self):
                 return self.items.pop()
-        def __iter__(self):
-            self.index = 0
-            return self
-        def __next__(self):
-            if self.index >= len(self.items):
-                raise StopIteration
-            item = self.items[self.index]
-            self.index += 1
-            return item
+            def __iter__(self):
+                self.index = 0
+                return self
+            def __next__(self):
+                if self.index >= len(self.items):
+                    raise StopIteration
+                item = self.items[self.index]
+                self.index += 1
+                return item
 
         # Usage
         stack = Stack()
