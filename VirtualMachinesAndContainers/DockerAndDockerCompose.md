@@ -1,0 +1,7 @@
+- [Docker fundamentals — images, containers, registries, and compose files.](https://github.com/CALlanoR/SystemDesign/blob/main/VirtualMachinesAndContainers/DockerFundamentals.md)
+- [Dockerfile Structure](https://github.com/CALlanoR/SystemDesign/blob/main/VirtualMachinesAndContainers/DockerfileStructure.md)
+- [Docker basic commands](https://github.com/CALlanoR/SystemDesign/blob/main/VirtualMachinesAndContainers/DockerBasicCommands.md)
+- [Docker Compose](https://github.com/CALlanoR/SystemDesign/blob/main/VirtualMachinesAndContainers/DockerCompose.md)
+- Understand deployment concepts like desired state, health checks, and updates.
+- Administration skills for high availability and scalability.
+- Explore added capabilities like service mesh, ingress, and observability
