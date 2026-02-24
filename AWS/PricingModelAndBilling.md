@@ -3,14 +3,13 @@
 ## AWS Princing Model
     - AWS Free Tier
         - Experience with the AWS platform, products and services. Free for one yesar for new customers.
-    - Pay for what you use
-    Three fundamental drivers of cost with AWS
-    - Compute (per hour/second)
-    - Storage (per GB)
-    - Data Transfer (per GB)
-        - Outbound is charged
-        - Inbound has no change (with some exceptions)
-        - Data transfer between services in the same region is free
+    - Pay for what you use (Three fundamental drivers of cost with AWS):
+        - Compute (per hour/second)
+        - Storage (per GB)
+        - Data Transfer (per GB)
+            - Outbound is charged
+            - Inbound has no change (with some exceptions)
+            - Data transfer between services in the same region is free
     - Pay less by using more
 
     - Total cost of Ownership (TCO)

@@ -23,19 +23,19 @@ Based on the book "The Data Warehouse Toolkit Third Edition, by Ralph Kimball an
     - The DW/BI system must serve as the authoritative and trustworthy foundation for improved decision making.
 
 ## DW/BI manager responsabilities
-    - Understand  the business users
+    - Understand the business users
         - Understand their job responsabilities, goals and objetives
         - Determine the decisions that the business users want to make with the help of the DW/BI system
         - Identify the "best" users who make effective, high-impact decisions.
     - Deliver high-quality, relevant and accesible information and analytics to the business users
-        - Choose tthe most robust, actionable data to present in the DW/BI
+        - Choose the most robust, actionable data to present in the DW/BI
         - Continously monitor the accuracy of the data and analyses
         - Adapt to changing user profiles, requirements, and business priorities along with the availability of new data sources.
     - Sustain the DW/BI environment
         - Using the success of the DW/BI to justify staffing and ongoing expenditures
         - Update the DW/BI system on a regular basis
         - Maintain the business users' trust
-        - Keep the business users, executive sponsors and IT  management happy
+        - Keep the business users, executive sponsors and IT management happy
 
 ## Dimensional Modeling introduction
 ### Fact tables for Measurements
