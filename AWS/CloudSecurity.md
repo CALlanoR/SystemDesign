@@ -11,13 +11,22 @@
 - Customer more flexibility (configure network and storage)
 - Customer responsible for managing more aspects of the security
 - Customer configure access control
+- Examples:
+  - EC2, VPC
 
 #### Platform as a service (PaaS)
 - Customer can focus on managing code or data no more
+- Examples:
+  - Lambda, RDS, ElasticCache, AWS Elastic Beanstalk
 
 #### Software as a service (SaaS)
 - Licensed on a subscription model or pay as you go
 - Services are typically accessed via web browser, mobile or API
+- Examples:
+  - AWS Marketplace (Third-party software): Many tools that you use under subscription within AWS fall into this category.
+  - Amazon Chime: Communication and meeting tool (similar to Teams or Zoom) that you consume by subscription or pay-per-use.
+  - AWS QuickSight: Business intelligence (BI) service for visualizing data. You don't install anything; you log in via your browser, connect your Redshift or PostgreSQL data, and generate dashboards for contracts.
+  - Amazon WorkMail: Managed business email service.
 
 
 ## IAM (Identity and Access Management, Global Service): Users & Groups
