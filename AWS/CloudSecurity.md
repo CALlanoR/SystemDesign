@@ -80,7 +80,7 @@ access to your AWS resources.
 
 ### IAM Security Tools
 - IAM Credentials Report (account level) a report that list all your account’s users and the status of their various credentials.
-- IAM Access Advisor (user-level):** shows the service permissions granted to a user and when those services were last accessed.
+- IAM Access Advisor (user-level): shows the service permissions granted to a user and when those services were last accessed.
 
 ## How can users access AWS?
 - To access AWS, there are three options:

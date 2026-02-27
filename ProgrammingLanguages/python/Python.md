@@ -1,4 +1,14 @@
 - [Python basics](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Basics.md)
+- Data Structures
+    - [Lists](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Lists.md)
+        - [List Comprehensions](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ListComprehensions.md)
+    - [Tuples](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Tuples.md)
+    - [Dictionaries](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Dictionary.md)
+    - [Sets](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Sets.md)
+    - [Arrays](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Arrays.md)
+        - [Arrays vs Lists](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ArraysVsList.md)
+    - Collections
+        - [Counter](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Counter.md)
 - Advanced concepts
     - [Dunder methods](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/DunderMethods.md)
     - [Concurrency and parallelism](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ConcurrencyAndParallelism.md)
@@ -7,3 +17,4 @@
         - [Multiprocessing](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ConcurrencyAndParallelism.md#multiprocessing)	
     - [GIL](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/gil.md)
 - [Secure practices](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/securePractices.md)
+- [OR Tools](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/ORTools.md)
