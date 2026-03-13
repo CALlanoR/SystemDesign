@@ -1,3 +1,5 @@
+
+
 1. **You don't need to know everything (having everything memorized).**
     - You just need to know the basics
         - Understanding patterns
@@ -20,7 +22,7 @@
     - Anyone can memorize a for loop, but can you break down a feature request into tiny buildable chunks?
     - Think of coding like being a detective.
     - The real magic is in asking the right questions, tracing clues, and piecing together the puzzle.
-    - stay curious, keep digging, why it's writter that way.
+    - stay curious, keep digging, why it's writter that way?.
 6. **Nobody cares about your code, they care about what it does.**
     - Not your client, not your boss, not your users.
     - They care about the value it provides.

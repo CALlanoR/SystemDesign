@@ -18,3 +18,17 @@ OR-Tools includes solvers for:
 ### What is an optimization problem?
 
 The goal of optimization is to find the best solution to a problem out of a large set of possible solutions. (Sometimes you'll be satisfied with finding any feasible solution; OR-Tools can do that as well.)
+
+Here's a typical optimization problem. Suppose that a shipping company delivers packages to its customers using a fleet of trucks. Every day, the company must assign packages to trucks, and then choose a route for each truck to deliver its packages. Each possible assignment of packages and routes has a cost, based on the total travel distance for the trucks, and possibly other factors as well. The problem is to choose the assignments of packages and routes that has the least cost.
+
+Like all optimization problems, this problem has the following elements:
+
+- **The objective**—the quantity you want to optimize. In the example above, the objective is to minimize cost. To set up an optimization problem, you need to define a function that calculates the value of the objective for any possible solution. This is called the objective function. In the preceding example, the objective function would calculate the total cost of any assignment of packages and routes.
+
+- **An optimal solution** is one for which the value of the objective function is the best. ("Best" can be either a maximum or a minimum.)
+
+- **The constraints**—restrictions on the set of possible solutions, based on the specific requirements of the problem. For example, if the shipping company can't assign packages above a given weight to trucks, this would impose a constraint on the solutions.
+
+- **A feasible solution** is one that satisfies all the given constraints for the problem, without necessarily being optimal.
+
+The first step in solving an optimization problem is identifying the objective and constraints.

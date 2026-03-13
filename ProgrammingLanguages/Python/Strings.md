@@ -148,3 +148,29 @@ print(s2)
 ## Formatting Strings
 Python provides several ways to include variables inside strings.
 
+### 1. Using % operator
+
+```python
+name = "John"
+age = 25
+print("My name is %s and I am %d years old." % (name, age))
+# result: My name is John and I am 25 years old.
+```
+
+### 2. Using format() method
+
+```python
+name = "John"
+age = 25
+print("My name is {} and I am {} years old.".format(name, age))
+# result: My name is John and I am 25 years old.
+```
+
+### 3. Using f-strings (Python 3.6+)
+The simplest and most preferred way to format strings is by using f-strings.
+```python
+name = "John"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
+# result: My name is John and I am 25 years old.
+```

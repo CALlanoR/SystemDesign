@@ -3,11 +3,11 @@ System  desing personal notes
 - Personal notes
 	- [Personal notes based in my experience](https://github.com/CALlanoR/SystemDesign/blob/main/PersonalNotes/PersonalNotes.md)
 - Programming Languages (proficient in at least one programing language)
-	- [Python](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/python/Python.md)
+	- [Python](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/Python/Python.md)
+	- [Rust](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingLanguages/Rust/Rust.md)
+	- Go
 	- Java
 	- Kotlin
-	- Go
-	- Rust
 	- C/C++	
 	- Erlang
 - [Programming paradigms](https://github.com/CALlanoR/SystemDesign/blob/main/ProgrammingParadigms/ProgrammingParadigms.md)
@@ -136,6 +136,7 @@ System  desing personal notes
 			- Firebase
 			- RethinkDB
 		- Column Databases
+			- [BigQuery](https://github.com/CALlanoR/SystemDesign/blob/main/GCP/BigQuery/BigQuery.md)
 			- Cassandra
 			- HBase
 		- Key-Value
@@ -148,7 +149,9 @@ System  desing personal notes
 		- SQLite
 	- Vector Database
 		- Milvus
-	- [Data Warehouse](https://github.com/CALlanoR/SystemDesign/blob/main/DataWarehouse/DataWarehouse.md)
+	- Data Engineering
+		- [Data Modeling](https://github.com/CALlanoR/SystemDesign/blob/main/DataEngineering/DataModeling.md)
+		- [Data Warehouse](https://github.com/CALlanoR/SystemDesign/blob/main/DataEngineering/DataWarehouse/DataWarehouse.md)
 - Git (GitHub, BitBucket, GitLab)
 	- Basic commands
 	- Comparisons

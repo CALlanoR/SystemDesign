@@ -1,0 +1,3 @@
+- [Data Drivin Organizations](https://github.com/CALlanoR/SystemDesign/blob/main/DataEngineering/1_DataDrivenOrganizations.md)
+- [The Elements of Data](https://github.com/CALlanoR/SystemDesign/blob/main/DataEngineering/2_ElementsOfData.md)
+- [Design Principles and Patterns for Data Pipelines](https://github.com/CALlanoR/SystemDesign/blob/main/DataEngineering/3_DesignPrinciplesAndPatternsForDataPipelines.md)
